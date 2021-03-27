@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -112,13 +112,9 @@
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <input class="reviews__input input" type="radio" id="btn-1" name="toggle-1" checked>
-      <input class="reviews__input input" type="radio" id="btn-2" name="toggle-1">
-      <input class="reviews__input input" type="radio" id="btn-3" name="toggle-1">
-
       <div class="reviews__wrapper slider">
         <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item slide slide-current">
             <div class="reviews__author">
               <cite class="reviews__name">Николай Петров</cite>
               <p class="reviews__about">25 лет, водитель трамвая</p>
@@ -126,7 +122,7 @@
             <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
 
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item slide">
             <div class="reviews__author">
               <cite class="reviews__name">Николай Петров</cite>
               <p class="reviews__about">25 лет, водитель трамвая</p>
@@ -134,7 +130,7 @@
             <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
 
-          <blockquote class="reviews__item slider__item">
+          <blockquote class="reviews__item slider__item slide">
             <div class="reviews__author">
               <cite class="reviews__name">Николай Петров</cite>
               <p class="reviews__about">25 лет, водитель трамвая</p>
@@ -144,17 +140,15 @@
         </div>
 
         <div class="reviews__toggles slider__toggles">
-          <label class="reviews__label" for="btn-1"></label>
-          <label class="reviews__label" for="btn-2"></label>
-          <label class="reviews__label" for="btn-3"></label>
+          <button class="reviews__button slider__button" type="button" aria-label="Первый слайд"></button>
+          <button class="reviews__button slider__button" type="button" aria-label="Второй слайд"></button>
+          <button class="reviews__button slider__button" type="button" aria-label="Третий слайд"></button>
         </div>
       </div>
     </section>
 
     <section class="price">
-      <input class="price__input input" type="radio" id="btn-4" name="toggle-2">
-      <input class="price__input input" type="radio" id="btn-5" name="toggle-2" checked>
-      <input class="price__input input" type="radio" id="btn-6" name="toggle-2">
+      <h2 class="visually-hidden">Тарифные планы</h2>
 
       <div class="price__wrapper">
         <table class="price__table table">
@@ -219,6 +213,9 @@
       </div>
 
       <div class="price__toggles">
+        <input class="price__input input" type="radio" id="btn-4" name="toggle-2">
+        <input class="price__input input" type="radio" id="btn-5" name="toggle-2" checked>
+        <input class="price__input input" type="radio" id="btn-6" name="toggle-2">
         <label class="price__label" for="btn-4"></label>
         <label class="price__label" for="btn-5"></label>
         <label class="price__label" for="btn-6"></label>
@@ -259,19 +256,19 @@
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Вконтакте</span>
-            <!-- <svg class="social__icon social__icon--vk" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon-vk" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Instagram</span>
-            <!-- <svg class="social__icon social__icon--inst" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon-inst" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Facebook</span>
-            <!-- <svg class="social__icon social__icon--fb" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon-fb" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
       </ul>
