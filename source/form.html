@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PINK | Конкурс</title>
+</head>
+
+<body>
+  <header class="page-header">
+
+    <div class="page-header__top">
+      <a class="page-header__title-logo" href="#">
+        <picture>
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
+        </picture>
+      </a>
+      <button class="page-header__toggle page-header__toggle--close" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+
+    <nav class="main-nav main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="page-main">
+    <div>
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </div>
+
+    <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="contest-form__title">
+        <p class="contest-form__title-visible">Поделитесь своей историей и получите шанс выиграть ценный приз —
+          1000 миль на вашу бонусную карту! <span class="contest-form__title-invisible">Пожалуйста, заполните
+            форму ниже:</span></p>
+      </div>
+
+      <fieldset class="contest-form__fieldset personal-info">
+        <legend class="visually-hidden">Данные участника</legend>
+        <p class="personal-info__item">
+          <label class="personal-info__label">Фамилия:</label>
+          <input class="personal-info__input input" type="text" placeholder="Укажите фамилию*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
+        </p>
+
+        <p class="personal-info__item">
+          <label class="personal-info__label">Имя:</label>
+          <input class="personal-info__input input" type="text" placeholder="Введите ваше имя*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
+        </p>
+
+        <p class="personal-info__item">
+          <label class="personal-info__label">Отчество:</label>
+          <input class="personal-info__input input" type="text" placeholder="Ну и отчество тоже" pattern="[А-Яа-яЁё \s]+$" title="Только русские буквы">
+        </p>
+      </fieldset>
+
+      <fieldset class="contest-form__fieldset progress">
+        <legend class="progress__legend">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="progress__list">
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="selfie-shark" value="selfie-shark" checked>
+            <label class="progress__label">Сделал селфи с акулой</label>
+          </li>
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="burned" value="burned" checked>
+            <label class="progress__label">Обгорел на пляже</label>
+          </li>
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="chuck-norris" value="chuck-norris">
+            <label class="progress__label">Видел Чака Норриса</label>
+          </li>
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="souvenirs" value="souvenirs">
+            <label class="progress__label">Накупил сувениров</label>
+          </li>
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="held-tower" value="held-tower" checked>
+            <label class="progress__label">Удержал башню</label>
+          </li>
+          <li class="progress__item">
+            <input class="progress__input checkbox" type="checkbox" name="trashed-hotel" value="trashed-hotel">
+            <label class="progress__label">Разгромил отель</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="contest-form__fieldset contacts">
+        <legend class="contacts__legend">Контактные данные</legend>
+        <p class="contacts__item">
+          <label class="contacts__label" for="phone">Номер телефона</label>
+          <input class="contacts__input input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" data-error="Ошибка, укажите номер" title="+7(888)888-88-88" required>
+          <svg class="contacts__icon contacts__icon--phone" width="21" height="20">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+        </p>
+        <p class="contacts__item">
+          <label class="contacts__label" for="email">Адрес почты</label>
+          <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
+          <svg class="contacts__icon contacts__icon--email" width="17" height="13">
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+        </p>
+      </fieldset>
+
+      <fieldset class="contest-form__fieldset application">
+        <legend class="application__legend">С каким приложением путешествовали?</legend>
+        <label class="application__label">
+          <input class="application__input input" type="radio" id="radio-1" name="user_application" checked>
+          <p class="application__text">Pink для iOS</p>
+        </label>
+
+        <label class="application__label">
+          <input class="application__input input" type="radio" id="radio-2" name="user_application">
+          <p class="application__text">Pink на Android</p>
+        </label>
+
+        <label class="application__label">
+          <input class="application__input input" type="radio" id="radio-3" name="user_application">
+          <p class="application__text">Windows Phone</p>
+        </label>
+      </fieldset>
+
+      <p class="contest-form__fieldset emotions">
+        <label class="emotions__label">Опишите свои эмоции</label>
+        <textarea class="emotions__textarea" rows="8" id="for-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </p>
+
+      <div class="contest-form__container">
+        <button class="contest-form__button button" type="submit">Отправить форму</button>
+        <p class="contest-form__legend">* — Обязательные поля</p>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="#">
+        <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип HTMLacademy">
+        <!-- <svg class="logo-footer" width="145" height="40">тут будет спрайт</svg> -->
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+            <!-- <svg class="social__icon social__icon-vk" width="48" height="48">тут будет спрайт</svg> -->
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <span class="visually-hidden">Instagram</span>
+            <!-- <svg class="social__icon social__icon-inst" width="48" height="48">тут будет спрайт</svg> -->
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__button" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <!-- <svg class="social__icon social__icon-fb" width="48" height="48">тут будет спрайт</svg> -->
+          </a>
+        </li>
+      </ul>
+
+      <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="developer__name">Разработано</p>
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTMLacademy">
+        <!-- <svg class="developer__icon" width="27" height="34">тут будет спрайт</svg> -->
+      </a>
+    </div>
+  </footer>
+
+  <section class="popup  popup--success">
+    <div class="popup__container">
+      <h2 class="popup__title">Ваша заявка отправлена</h2>
+
+      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим ее и<br class="popup__text-transfer"> оповестим вас.</p>
+    </div>
+
+    <div class="popup__button-wrapper">
+      <input class="button  button--popup-close" type="button" value="Закрыть окно">
+    </div>
+  </section>
+
+  <section class="popup  popup--error">
+    <div class="popup__container">
+      <h2 class="popup__title">Что-то пошло не так!</h2>
+
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+      <input class="button  button--popup-close" type="button" value="Ok">
+    </div>
+  </section>
+
+</body>
+
+</html>
