@@ -1,3 +1,81 @@
 // .post {
 
 // }
+
+.post__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: @features-bg-color;
+
+  &--panorama {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: @nav-text-color;
+  }
+}
+
+.post__image {
+  &--panorama {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.post__quote {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 17px 0 20px 18px;
+  margin: 0;
+  text-align: left;
+  background-color: @features-bg-color;
+
+  &--panorama {
+    margin-top: -7px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: -137px;
+      right: 0;
+      padding-top: 6px;
+      width: 140px;
+      height: 30px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: @nav-text-color;
+      background-color: @accent-color;
+    }
+  }
+}
+
+.post__author {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.post__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.post__button {
+  border: none;
+}
+
+.post__likes {
+  font-size: 12px;
+  color: @accent-color;
+}
