@@ -1,22 +1,37 @@
 .table {
   width: 834px;
   border-spacing: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 618px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 941px;
+  }
 }
 
 .table__title {
   position: relative;
+  box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 20px;
   border-right: 2px solid @table-line-color;
   font-size: 18px;
   color: @nav-text-color;
   background-color: @main-text-color;
+  text-transform: uppercase;
 
   &:first-child {
     display: none;
     border-right: 0;
     border-bottom: 2px solid @table-line-color;
     background-color: transparent;
+
+    @media (min-width: @tablet-width) {
+      display: inline;
+      text-transform: none;
+    }
   }
 }
 
@@ -35,20 +50,46 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
+
+  @media (min-width: @tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .table__option {
-  padding-left: 15px;
-  padding-right: 18px;
-  padding-top: 14px;
-  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 30px;
   border-right: 2px solid @table-line-color;
   border-bottom: 2px solid @table-line-color;
   background-color: @nav-text-color;
 
+  @media (min-width: @tablet-width) {
+    line-height: 30px;
+    width: 153px;
+
+    &:nth-child(2n) {
+      width: 152px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 234px;
+
+    &:nth-child(2n) {
+      width: 233px;
+    }
+  }
+
   &:first-child {
     display: none;
     border-left: 2px solid @table-line-color;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 }
 
@@ -57,6 +98,10 @@
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+  }
 
   &::before {
     content: attr(data-feature-name);

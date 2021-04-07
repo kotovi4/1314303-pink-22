@@ -1,5 +1,28 @@
 .reviews {
   position: relative;
   text-align: center;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews__arrow {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    top: 212px;
+    padding: 0;
+    margin: 0;
+    width: 22px;
+    height: 41px;
+
+    &--left {
+      left: 80px;
+    }
+
+    &--right {
+      right: 80px;
+    }
+  }
 }

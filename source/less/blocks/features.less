@@ -2,19 +2,29 @@
   position: relative;
   text-align: center;
   padding-bottom: 20px;
+  background-color: @features-bg-color;
 }
 
 .features__slogan {
+  padding-top: 46px;
   padding-bottom: 70px;
+  background-color: @nav-text-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
 }
 
 .features__slogan-text {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 300;
-  padding-top: 41px;
   margin: 0 auto;
   width: 204px;
+
+  &--position {
+    padding-top: 31px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 40px;
@@ -22,8 +32,8 @@
     width: 588px;
 
     &--position {
-      padding-top: 31px;
       width: 500px;
+      padding-top: 0;
     }
   }
 }
@@ -31,9 +41,8 @@
 .features__list {
   margin: 0;
   padding: 0;
-  padding-top: 53px;
+  padding-top: 35px;
   padding-bottom: 20px;
-  background-color: @features-bg-color;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -44,7 +53,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     text-align: center;
-    padding-left: 0;
+    padding-left: 164px;
+    padding-right: 164px;
     padding-top: 75px;
     padding-bottom: 42px;
   }
@@ -53,12 +63,18 @@
 .features__item {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 230px;
+    padding-top: 324px;
+  }
 }
 
 .features__title {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  color: @title-text-color;
 }
 
 // .features__text {
@@ -69,5 +85,9 @@
     position: absolute;
     top: 390px;
     left: 85px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
