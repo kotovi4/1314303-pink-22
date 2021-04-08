@@ -1,19 +1,46 @@
 .effect {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 54px;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @features-bg-color;
+  }
 }
 
-// .effect__description {
+.effect__description {
+  padding-top: 30px;
+  padding-left: 310px;
+}
 
-// }
+.effect__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: @title-text-color;
 
-// .effect__title {
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
 
-// }
+.effect__text {
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
-// .effect__text {
+.effect__link {
+  color: @accent-color;
+  text-decoration-line: underline;
 
-// }
-
-// .effect__link {
-
-// }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

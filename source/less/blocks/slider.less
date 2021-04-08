@@ -11,10 +11,12 @@
 .slider__item {
   padding: 0;
   margin: 0;
-}
 
-// .slider__author {
-// }
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .slider__name {
   font-size: 18px;
@@ -22,22 +24,54 @@
   font-weight: 700;
   font-style: normal;
   color: @title-text-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    font-size: 20px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .slider__about {
   display: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    order: 2;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .slider__feedback {
   padding: 13px 0;
   margin: 0;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 165px;
+  }
 }
 
 .slider__toggles {
   margin-top: 33px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .slider__button {
