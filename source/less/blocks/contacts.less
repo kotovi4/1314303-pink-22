@@ -1,11 +1,44 @@
 .contacts {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
 }
 
 .contacts__legend {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    text-align: center;
+  }
 }
 
-// .contacts__input {
+.contacts__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
-// }
+.contacts__label {
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.contacts__input {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}

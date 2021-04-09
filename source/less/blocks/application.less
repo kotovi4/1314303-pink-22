@@ -2,6 +2,18 @@
   padding-bottom: 38px;
   border: none;
   background-color: @features-bg-color;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    order: 1;
+    background-color: @nav-text-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 46%;
+    margin: 0 0 54px;
+    padding: 41px 7.9% 20px;
+  }
 }
 
 .application__wrapper {
@@ -14,6 +26,7 @@
 .application__legend {
   position: relative;
   top: 35px;
+  text-align: center;
 }
 
 .application__label {

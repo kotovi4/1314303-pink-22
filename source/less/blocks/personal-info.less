@@ -2,6 +2,17 @@
   position: relative;
   margin: 0;
   border: none;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.personal-info__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .personal-info__label {
@@ -11,6 +22,10 @@
   line-height: 30px;
   text-transform: uppercase;
   color: @accent-color;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 10px;
+  }
 }
 
 // .personal-info__input {

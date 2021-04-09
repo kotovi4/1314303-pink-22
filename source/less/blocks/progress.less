@@ -3,11 +3,21 @@
   padding-bottom: 38px;
   border: none;
   background-color: @features-bg-color;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    background-color: @nav-text-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }
 
 .progress__legend {
   position: relative;
   top: 40px;
+  text-align: center;
 }
 
 .progress__list {
