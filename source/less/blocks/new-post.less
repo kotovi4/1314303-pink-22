@@ -1,6 +1,9 @@
-// .new-post {
-
-// }
+.new-post {
+  @media (min-width: @desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
 
 .new-post__slogan {
   padding-top: 49px;
@@ -10,4 +13,8 @@
   margin: 0 auto;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }

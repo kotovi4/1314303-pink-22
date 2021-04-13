@@ -1,6 +1,14 @@
-// .post {
+.post {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-// }
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .post__item {
   margin-left: 20px;
@@ -9,11 +17,23 @@
   text-align: center;
   background-color: @features-bg-color;
 
+  @media (min-width: @tablet-width) {
+    width: 43%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+
   &--panorama {
     margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
     background-color: @nav-text-color;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+    }
   }
 }
 
