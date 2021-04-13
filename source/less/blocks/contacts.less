@@ -1,11 +1,49 @@
 .contacts {
   border: none;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 100%;
+  }
 }
 
 .contacts__legend {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    text-align: center;
+  }
 }
 
-// .contacts__input {
+.contacts__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-// }
+  @media (min-width: @desktop-width) {
+    width: 376px;
+  }
+}
+
+.contacts__label {
+  @media (min-width: @tablet-width) {
+    display: block;
+    order: 2;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.contacts__input {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
