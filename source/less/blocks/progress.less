@@ -25,6 +25,11 @@
   padding: 0;
   padding-top: 25px;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .progress__item {
