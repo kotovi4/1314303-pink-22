@@ -6,13 +6,12 @@
 }
 
 .features__slogan {
-  padding-top: 46px;
   padding-bottom: 70px;
   background-color: @nav-text-color;
 
-  @media (min-width: @tablet-width) {
-    padding-top: 58px;
-  }
+  // @media (min-width: @tablet-width) {
+  //   padding-top: 58px;
+  // }
 }
 
 .features__slogan-text {
@@ -39,15 +38,17 @@
 }
 
 .features__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 35px;
   padding-bottom: 20px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
+    // width: 310px;
     text-align: left;
     padding-left: 308px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +58,7 @@
     padding-right: 164px;
     padding-top: 75px;
     padding-bottom: 42px;
+    max-width: 940px;
   }
 }
 

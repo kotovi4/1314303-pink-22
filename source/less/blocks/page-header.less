@@ -1,24 +1,29 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  box-sizing: border-box;
+  position: relative;
   width: 100%;
-  max-width: 1500px;
-  min-width: 320px;
   background-color: @page-header-top-bg;
-  z-index: 99;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 110px;
-  }
+  z-index: 3;
 }
 
 .page-header--opened {
   position: relative;
   background-color: @main-text-color;
+}
+
+.page-header__wrapper {
+  position: relative;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 0 130px;
+  }
 }
 
 .page-header__top {

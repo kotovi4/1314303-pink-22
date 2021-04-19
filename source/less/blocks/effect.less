@@ -14,7 +14,7 @@
 
 .effect__description {
   padding-top: 30px;
-  padding-left: 310px;
+  padding-left: 374px;
   padding-right: 20px;
 
   @media (min-width: @desktop-width) {
@@ -43,6 +43,15 @@
 .effect__link {
   color: @accent-color;
   text-decoration-line: underline;
+
+  &:hover,
+  &:focus {
+    color: @main-text-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;

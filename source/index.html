@@ -11,33 +11,35 @@
 
   <header class="page-header">
 
-    <div class="page-header__top">
-      <a class="page-header__title-logo" href="#">
-        <picture>
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
-        </picture>
-      </a>
-    </div>
+    <div class="page-header__wrapper">
+      <div class="page-header__top">
+        <a class="page-header__title-logo" href="#">
+          <picture>
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
+          </picture>
+        </a>
+      </div>
 
-    <nav class="main-nav main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
   </header>
 
@@ -45,34 +47,36 @@
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней "Пинк"</h1>
 
     <section class="promo">
-      <h2 class="promo__title container">Взгляните на жизнь иначе!</h2>
-      <picture>
-        <img class="promo__preview" src="img/phone-mobile.png" alt="#" width="320" height="286">
-      </picture>
-      <div class="promo__download">
-        <a class="promo__button" href="#">Скачать приложение</a>
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+        <picture>
+          <img class="promo__preview" src="img/phone-mobile.png" alt="#" width="320" height="286">
+        </picture>
+        <div class="promo__download">
+          <a class="promo__button" href="#">Скачать приложение</a>
 
-        <ul class="promo__list list-icon">
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">iOs</span>
-            </a>
-          </li>
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <ul class="promo__list list-icon">
+            <li class="list-icon__item">
+              <a class="list-icon__link" href="#">
+                <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
+                <span class="visually-hidden">iOs</span>
+              </a>
+            </li>
+            <li class="list-icon__item">
+              <a class="list-icon__link" href="#">
+                <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="list-icon__item">
+              <a class="list-icon__link" href="#">
+                <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
+                <span class="visually-hidden">Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
 
@@ -83,7 +87,7 @@
         <p class="features__slogan-text features__slogan-text--position">Нам есть, что вам предложить!</p>
       </div>
 
-      <ul class="features__list">
+      <ul class="features__list container">
         <li class="features__item">
           <h3 class="features__title">Поднимает настроение</h3>
           <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -104,7 +108,7 @@
     </section>
 
     <section class="effect">
-      <div class="effect__description">
+      <div class="effect__description container">
         <h2 class="effect__title">Эффект на 24 часа!</h2>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
