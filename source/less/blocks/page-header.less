@@ -1,7 +1,12 @@
 .page-header {
-  position: relative;
-  display: block;
-  background-color: @main-text-color;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1500px;
+  min-width: 320px;
+  background-color: @page-header-top-bg;
+  z-index: 99;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -11,13 +16,19 @@
   }
 }
 
+.page-header--opened {
+  position: relative;
+  background-color: @main-text-color;
+}
+
 .page-header__top {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   height: 69px;
-  border-bottom: 1px solid @title-text-color;
+  // border-bottom: 1px solid @title-text-color;
 
   @media (min-width: @tablet-width) {
     height: 110px;
@@ -29,15 +40,5 @@
 }
 
 // .page-header__title-logo {
-
-// }
-
-.page-header__toggle {
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-// .page-header__toggle--close {
 
 // }
