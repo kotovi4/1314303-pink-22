@@ -14,16 +14,16 @@
   display: block;
 }
 
-// .main-nav--nojs {
-
-// }
+.main-nav--nojs {
+  background-color: @main-text-color;
+}
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  border-top: 1px solid #000000;
+  border-top: 1px solid @title-text-color;
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -103,27 +103,27 @@
   cursor: pointer;
   outline: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 4px;
-    background-color: @nav-text-color;
-    box-shadow: 0 9px 0 0 @nav-text-color, 0 18px 0 0 @nav-text-color;
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 50px;
+  //   height: 4px;
+  //   background-color: @nav-text-color;
+  //   box-shadow: 0 9px 0 0 @nav-text-color, 0 18px 0 0 @nav-text-color;
+  // }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 5px;
-    width: 30px;
-    height: 5px;
-    border-radius: 2px;
-    background-color: @accent-color;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 8px;
+  //   right: 5px;
+  //   width: 30px;
+  //   height: 5px;
+  //   border-radius: 2px;
+  //   background-color: @accent-color;
+  // }
 
   @media (min-width: @tablet-width) {
     top: 40px;
@@ -132,4 +132,51 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
+}
+
+.main-nav__toggle-line {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  font-size: 0;
+  color: transparent;
+  background: @nav-text-color;
+  transition: 0.3s;
+
+  &::after {
+    top: 7px;
+  }
+
+  &::before {
+    top: -7px;
+  }
+}
+
+.main-nav__toggle-line::after,
+.main-nav__toggle-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: @nav-text-color;
+  transform-origin: 50% 50%;
+  transition: 0.3s 0.3s, transform 0.3s;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line {
+  background: transparent;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line::after,
+.main-nav__toggle--closed .main-nav__toggle-line::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: 0;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line::before {
+  transform: rotate3d(0, 0, 1, -45deg);
 }

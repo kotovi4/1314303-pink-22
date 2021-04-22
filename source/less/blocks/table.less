@@ -33,6 +33,29 @@
       text-transform: none;
     }
   }
+
+  &--hit::before {
+    position: absolute;
+    margin: auto;
+    top: -6px;
+    bottom: auto;
+    left: -34px;
+    right: auto;
+    content: "хит";
+    width: 45px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 67px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: @nav-text-color;
+    border-bottom: 27px solid @accent-color;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    transform: rotate(-45deg);
+    z-index: 10;
+  }
 }
 
 .table__price-type,
