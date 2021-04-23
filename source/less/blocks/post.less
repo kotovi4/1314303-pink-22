@@ -1,39 +1,43 @@
 .post {
+  display: grid;
+  grid-template-columns: auto 280px auto;
+  grid-column-gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: auto 300px 300px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: auto 300px 300px 300px auto;
+    margin: 0;
   }
 }
 
 .post__item {
-  margin-left: 20px;
-  margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
   background-color: @features-bg-color;
 
+  &:nth-child(n + 2) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
   @media (min-width: @tablet-width) {
-    width: 43%;
-    margin-left: 0;
-    margin-right: 0;
-
-
-    &:nth-child(2n):not(:first-child) {
-      margin-right: 20px;
-
-      @media (min-width: @desktop-width) {
-        margin-left: 20px;
-      }
+    &:nth-child(2n + 1):not(:first-child) {
+      grid-column-start: 3;
+      grid-column-end: 4;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 300px;
+    &:nth-child(3n + 1):not(:first-child) {
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
   }
 
   &--panorama {
@@ -41,9 +45,16 @@
     margin-left: 0;
     margin-right: 0;
     background-color: @nav-text-color;
+    grid-column-start: 1;
+    grid-column-end: 4;
 
     @media (min-width: @tablet-width) {
-      width: 100%;
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-column-end: 6;
     }
   }
 }
@@ -72,8 +83,13 @@
 
   &--panorama {
     margin-top: -7px;
-    margin-left: 28px;
-    margin-right: 28px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: @tablet-width) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &::before {
       content: "Панорама дня";

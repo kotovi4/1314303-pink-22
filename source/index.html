@@ -9,35 +9,37 @@
 </head>
 <body class="page-body">
 
-  <header class="page-header">
+  <header class="page-header page-header--closed">
 
-    <div class="page-header__top">
-      <a class="page-header__title-logo" href="#">
-        <picture>
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
-        </picture>
-      </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__top">
+        <a class="page-header__title-logo" href="#">
+          <picture>
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
+          </picture>
+        </a>
+      </div>
+
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-line">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
 
   </header>
 
@@ -45,34 +47,33 @@
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней "Пинк"</h1>
 
     <section class="promo">
-      <h2 class="promo__title container">Взгляните на жизнь иначе!</h2>
-      <picture>
-        <img class="promo__preview" src="img/phone-mobile.png" alt="#" width="320" height="286">
-      </picture>
-      <div class="promo__download">
-        <a class="promo__button" href="#">Скачать приложение</a>
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+        <picture>
+          <img class="promo__preview" src="img/phone-mobile.png" alt="#" width="320" height="286">
+        </picture>
+        <div class="promo__download">
+          <a class="promo__button" href="#">Скачать приложение</a>
 
-        <ul class="promo__list list-icon">
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">iOs</span>
-            </a>
-          </li>
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="list-icon__item">
-            <a class="list-icon__link" href="#">
-              <img src="https://via.placeholder.com/44x44" width="44" height="44" alt="">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <ul class="promo__list list-icon">
+            <li class="list-icon__item">
+              <a class="list-icon__link list-icon__link--apple" href="#" aria-label="apple">
+                <span class="visually-hidden">Apple</span>
+              </a>
+            </li>
+            <li class="list-icon__item">
+              <a class="list-icon__link list-icon__link--android" href="#" aria-label="android">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="list-icon__item">
+              <a class="list-icon__link list-icon__link--windows" href="#" aria-label="windows">
+                <span class="visually-hidden">Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
 
@@ -83,20 +84,22 @@
         <p class="features__slogan-text features__slogan-text--position">Нам есть, что вам предложить!</p>
       </div>
 
-      <ul class="features__list">
-        <li class="features__item">
-          <h3 class="features__title">Поднимает настроение</h3>
-          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Меняет мир вокруг</h3>
-          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="features__item">
-          <h3 class="features__title">Заводит новых друзей</h3>
-          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
+      <div class="features__list-wrapper">
+        <ul class="features__list container">
+          <li class="features__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
       <picture>
         <img class="features__preview" src="https://via.placeholder.com/157x320" alt="" width="157" height="320">
       </picture>
@@ -104,16 +107,16 @@
     </section>
 
     <section class="effect">
-      <div class="effect__description">
+      <div class="effect__description container">
         <h2 class="effect__title">Эффект на 24 часа!</h2>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
 
-    <section class="reviews slider container">
+    <section class="reviews slider">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="slider__list">
+      <div class="slider__list container">
         <blockquote class="slider__item slide slide--current">
           <cite class="slider__name">Николай Петров</cite>
           <p class="slider__about">25 лет, водитель трамвая</p>
@@ -134,7 +137,7 @@
       </div>
 
       <div class="reviews__toggles slider__toggles">
-        <button class="reviews__button slider__button" type="button" aria-label="Первый слайд"></button>
+        <button class="reviews__button slider__button slider__button--active" type="button" aria-label="Первый слайд"></button>
         <button class="reviews__button slider__button" type="button" aria-label="Второй слайд"></button>
         <button class="reviews__button slider__button" type="button" aria-label="Третий слайд"></button>
       </div>
@@ -252,7 +255,7 @@
         <input class="price__input price__input--two" type="radio" id="btn-5" name="toggle-2" checked>
         <input class="price__input price__input--three" type="radio" id="btn-6" name="toggle-2">
         <label class="price__label" for="btn-4"></label>
-        <label class="price__label" for="btn-5"></label>
+        <label class="price__label price__label--active" for="btn-5"></label>
         <label class="price__label" for="btn-6"></label>
       </div>
     </section>
@@ -275,13 +278,14 @@
           <a class="info-list__address" href="https://yandex.ru/maps/-/CVTgZEpc">ул. Большая<br>Конюшенная, 19/8</a>
         </li>
       </ul>
-      <div class="contacts-list__map">
-        <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-      </div>
+    </section>
+
+    <section class="map">
+      <img class="map__img" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип HTMLacademy">
@@ -318,6 +322,6 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
