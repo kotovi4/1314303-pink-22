@@ -10,35 +10,37 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header page-header--opened">
 
-    <div class="page-header__top">
-      <a class="page-header__title-logo" href="#">
-        <picture>
-          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
-        </picture>
-      </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+    <div class="page-header__wrapper">
+      <div class="page-header__top">
+        <a class="page-header__title-logo" href="#">
+          <picture>
+            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
+          </picture>
+        </a>
+      </div>
+
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="main-nav__toggle-line">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav main-nav--nojs">
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
 
   </header>
 
@@ -47,7 +49,7 @@
       <h1 class="page-main__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
 
-    <form class="contest-form container" action="https://echo.htmlacademy.ru" method="post">
+    <form class="contest-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="contest-form__title">
         <p class="contest-form__title-visible">Поделитесь своей историей и получите шанс выиграть ценный приз —
           1000 миль на вашу бонусную карту! <span class="contest-form__title-invisible">Пожалуйста, заполните форму ниже:</span></p>
@@ -74,29 +76,49 @@
       <fieldset class="contest-form__fieldset progress">
         <legend class="progress__legend legend">Ваши безбашенные достижения в путешествии</legend>
         <ul class="progress__list">
+
           <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="selfie-shark" name="selfie-shark" value="selfie-shark" checked>
-            <label class="progress__label" for="selfie-shark">Сделал селфи с акулой</label>
+            <label class="progress__label checkbox" for="selfie-shark">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="selfie-shark" name="selfie-shark" value="selfie-shark" checked>
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Сделал селфи с акулой</span>
+            </label>
+          </li>
+
+          <li class="progress__item">
+            <label class="progress__label checkbox" for="burned">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="burned" name="burned" value="burned" checked>
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Обгорел на пляже</span>
+            </label>
           </li>
           <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="burned" name="burned" value="burned" checked>
-            <label class="progress__label" for="burned">Обгорел на пляже</label>
+            <label class="progress__label checkbox" for="chuck-norris">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris" value="chuck-norris">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Видел Чака Норриса</span>
+            </label>
           </li>
           <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="chuck-norris" name="chuck-norris" value="chuck-norris">
-            <label class="progress__label" for="chuck-norris">Видел Чака Норриса</label>
+            <label class="progress__label checkbox" for="souvenirs">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Накупил сувениров</span>
+            </label>
           </li>
           <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
-            <label class="progress__label" for="souvenirs">Накупил сувениров</label>
+            <label class="progress__label checkbox" for="held-tower">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="held-tower" name="held-tower" value="held-tower" checked>
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Удержал башню</span>
+            </label>
           </li>
           <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="held-tower" name="held-tower" value="held-tower" checked>
-            <label class="progress__label" for="held-tower">Удержал башню</label>
-          </li>
-          <li class="progress__item">
-            <input class="progress__input checkbox" type="checkbox" id="trashed-hotel" name="trashed-hotel" value="trashed-hotel">
-            <label class="progress__label" for="trashed-hotel">Разгромил отель</label>
+            <label class="progress__label checkbox" for="trashed-hotel">
+              <input class="checkbox__input visually-hidden" type="checkbox" id="trashed-hotel" name="trashed-hotel" value="trashed-hotel">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">Разгромил отель</span>
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -106,35 +128,40 @@
         <p class="contacts__item">
           <label class="contacts__label legend" for="phone">Номер телефона</label>
           <input class="contacts__input input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" data-error="Ошибка, укажите номер" title="+7(888)888-88-88" required>
-          <svg class="contacts__icon contacts__icon--phone" width="21" height="20">
+          <!-- <svg class="contacts__icon contacts__icon--phone" width="21" height="20">
             <use xlink:href="#icon-phone"></use>
-          </svg>
+          </svg> -->
+          <span class="contacts__icon contacts__icon--phone"></span>
         </p>
         <p class="contacts__item">
           <label class="contacts__label legend" for="email">Адрес почты</label>
           <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
-          <svg class="contacts__icon contacts__icon--email" width="17" height="13">
+          <!-- <svg class="contacts__icon contacts__icon--email" width="17" height="13">
             <use xlink:href="#icon-mail"></use>
-          </svg>
+          </svg> -->
+          <span class="contacts__icon contacts__icon--email"></span>
         </p>
       </fieldset>
 
       <fieldset class="contest-form__fieldset application">
         <legend class="application__legend legend">С каким приложением путешествовали?</legend>
         <div class="application__wrapper">
-          <label class="application__label" for="radio-1">
-            <input class="application__input" type="radio" id="radio-1" name="user-application" checked>
-            <span class="application__text">Pink для iOS</span>
+          <label class="application__label radio" for="radio-1">
+            <input class="radio__input visually-hidden" type="radio" id="radio-1" name="user-application" checked>
+            <span class="radio__icon"></span>
+            <span class="radio__text">Pink для iOS</span>
           </label>
 
-          <label class="application__label" for="radio-2">
-            <input class="application__input" type="radio" id="radio-2" name="user-application">
-            <span class="application__text">Pink на Android</span>
+          <label class="application__label radio" for="radio-2">
+            <input class="radio__input visually-hidden" type="radio" id="radio-2" name="user-application">
+            <span class="radio__icon"></span>
+            <span class="radio__text">Pink на Android</span>
           </label>
 
-          <label class="application__label" for="radio-3">
-            <input class="application__input" type="radio" id="radio-3" name="user-application">
-            <span class="application__text">Windows Phone</span>
+          <label class="application__label radio" for="radio-3">
+            <input class="radio__input visually-hidden" type="radio" id="radio-3" name="user-application">
+            <span class="radio__icon"></span>
+            <span class="radio__text">Windows Phone</span>
           </label>
         </div>
       </fieldset>
@@ -152,7 +179,7 @@
     </form>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page- container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип HTMLacademy">
@@ -212,6 +239,7 @@
       <input class="popup__button button button--popup-close" type="button" value="Ok">
     </div>
   </section>
+  <script src="js/script.js"></script>
 
 </body>
 

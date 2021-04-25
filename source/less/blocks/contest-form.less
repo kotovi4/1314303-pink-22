@@ -11,22 +11,26 @@
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1170px;
-    padding: 80px 10.3% 0;
   }
 }
 
 .contest-form__title {
+  width: 280px;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 490px;
     margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
     margin: 0 186px;
+    padding-top: 0;
   }
 }
 
@@ -63,6 +67,10 @@
 }
 
 .contest-form__button {
+  &:disabled {
+    background-color: @table-line-color;
+  }
+
   @media (min-width: @tablet-width) {
     margin: 0;
   }
