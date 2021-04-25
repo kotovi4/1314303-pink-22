@@ -50,22 +50,25 @@
 }
 
 .contacts__icon {
-  position: absolute;
-  display: block;
-  top: 0;
-  right: 0;
-  width: 62px;
-  height: 63px;
-  background-color: @table-line-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 63px;
+    background-color: @table-line-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
 
-  &--phone {
-    background: @table-line-color url("../img/phone-icon.svg") no-repeat center;
+    &--phone {
+      background: @table-line-color url("../img/phone-icon.svg") no-repeat center;
+    }
+
+    &--email {
+      background: @table-line-color url("../img/email-icon.svg") no-repeat center;
+    }
   }
 
-  &--email {
-    background: @table-line-color url("../img/emailç-icon.svg") no-repeat center;
-  }
 }
