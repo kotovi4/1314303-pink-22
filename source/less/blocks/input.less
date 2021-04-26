@@ -5,9 +5,18 @@
   min-height: 63px;
   padding-left: 10px;
   border: 2px solid @table-line-color;
-  border-radius: 1px;
+  border-radius: 2px;
   font-size: 18px;
   line-height: 30px;
+
+  &:hover {
+    border-color: @main-text-color;
+  }
+
+  &:active,
+  &:focus {
+    border-color: @accent-color;
+  }
 }
 
 input::placeholder {
