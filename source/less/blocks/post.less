@@ -21,22 +21,29 @@
   text-align: center;
   background-color: @features-bg-color;
 
-  &:nth-child(n + 2) {
-    grid-column-start: 2;
-    grid-column-end: 3;
+  // &:nth-child(n + 2) {
+  //   grid-column-start: 2;
+  //   grid-column-end: 3;
+  // }
+
+  @media (max-width: calc(@tablet-width - 1px)) {
+    &:nth-child(n + 2) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
   }
 
-  @media (min-width: @tablet-width) {
-    &:nth-child(2n + 1):not(:first-child) {
-      grid-column-start: 3;
-      grid-column-end: 4;
+  @media (min-width: @tablet-width) and (max-width: calc(@desktop-width - 1px)) {
+    &:nth-child(2n + 2) {
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
   }
 
   @media (min-width: @desktop-width) {
-    &:nth-child(3n + 1):not(:first-child) {
-      grid-column-start: 4;
-      grid-column-end: 5;
+    &:nth-child(3n + 2) {
+      grid-column-start: 2;
+      grid-column-end: 3;
     }
   }
 
