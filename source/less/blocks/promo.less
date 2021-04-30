@@ -1,0 +1,133 @@
+.promo {
+  position: relative;
+  content: "";
+  display: block;
+  top: -69px;
+  text-align: center;
+  background-image: url("../img/promo-bg-mobile.png");
+  // background-color: @download-bg-color;
+  background-position: top;
+  background-size: 100%, cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: -110px;
+    min-height: 703px;
+  }
+}
+
+.promo__wrapper {
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+    max-width: 1200px;
+  }
+}
+
+.promo__title {
+  width: 241px;
+  margin: 0 auto;
+  padding-top: 92px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: @nav-text-color;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 140px;
+    // width: 241px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    line-height: 48px;
+    z-index: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.promo__preview {
+  position: relative;
+  background-position: center;
+  margin-bottom: -7px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    display: block;
+    bottom: 7px;
+    right: 0;
+    padding: 0;
+    width: 517px;
+    height: 545px;
+    z-index: 1;
+  }
+}
+
+.promo__download {
+  background-color: @download-bg-color;
+  padding: 20px 0;
+
+  @media (min-width: @tablet-width) {
+    // padding-left: 20px;
+    // width: 300px;
+    background: none;
+    z-index: 2;
+  }
+
+  // @media (min-width: @desktop-width) {
+  //   padding-left: 120px;
+  // }
+}
+
+.promo__button {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  padding: 15px 38px;
+  color: @nav-text-color;
+  border: 3px solid @nav-text-color;
+  border-radius: 29px;
+
+  &:hover {
+    background-color: @nav-text-color;
+    color: @accent-color;
+    box-shadow: 0 5px 7px @shadow-button-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+  }
+}
+
+// .promo__list {
+
+// }
+
+.promo__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: @nav-text-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}

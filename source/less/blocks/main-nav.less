@@ -1,0 +1,186 @@
+.main-nav {
+  display: block;
+}
+
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--nojs {
+  background-color: @main-text-color;
+
+  @media (min-width: @desktop-width) {
+    background: none;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid @title-text-color;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: @nav-text-color;
+  border-bottom: 1px solid @title-text-color;
+  border-top: 1px solid @shadow-color;
+
+  &:hover,
+  &:focus {
+    color: @accent-color;
+  }
+
+  &:active {
+    color: @nav-text-color;
+    opacity: 0.3;
+  }
+
+  &--active:hover,
+  &--active:focus,
+  &--active:active {
+    color: @nav-text-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+    border: none;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 30px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      z-index: 20;
+      background-color: @nav-text-color;
+    }
+  }
+}
+
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 23px;
+  border: none;
+  z-index: 9;
+  background: 0 0;
+  cursor: pointer;
+  outline: none;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 50px;
+  //   height: 4px;
+  //   background-color: @nav-text-color;
+  //   box-shadow: 0 9px 0 0 @nav-text-color, 0 18px 0 0 @nav-text-color;
+  // }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 8px;
+  //   right: 5px;
+  //   width: 30px;
+  //   height: 5px;
+  //   border-radius: 2px;
+  //   background-color: @accent-color;
+  // }
+
+  @media (min-width: @tablet-width) {
+    top: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle-line {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  font-size: 0;
+  color: transparent;
+  background: @nav-text-color;
+  transition: 0.3s;
+
+  &::after {
+    top: 7px;
+  }
+
+  &::before {
+    top: -7px;
+  }
+}
+
+.main-nav__toggle-line::after,
+.main-nav__toggle-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: @nav-text-color;
+  transform-origin: 50% 50%;
+  transition: 0.3s 0.3s, transform 0.3s;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line {
+  background: transparent;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line::after,
+.main-nav__toggle--closed .main-nav__toggle-line::before {
+  transform: rotate3d(0, 0, 1, 45deg);
+  transition: 0.3s, transform 0.3s 0.3s;
+  top: 0;
+}
+
+.main-nav__toggle--closed .main-nav__toggle-line::before {
+  transform: rotate3d(0, 0, 1, -45deg);
+}
