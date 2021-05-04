@@ -48,6 +48,48 @@
   }
 }
 
-// .page-header__title-logo {
+.page-header__logo {
+  padding-top: 5px;
+  color: @nav-text-color;
 
-// }
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover {
+    color: @accent-color;
+  }
+
+  &:active {
+    color: @nav-text-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}
