@@ -33,6 +33,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 36px;
+  }
 }
 
 .reviews__wrapper {
@@ -51,13 +55,27 @@
     margin: 0;
     width: 22px;
     height: 41px;
+    border: none;
+    background: none;
+    color: @social-icon-border-color;
 
     &--left {
-      left: 80px;
+      top: 263px;
+      left: 130px;
     }
 
     &--right {
-      right: 80px;
+      top: 263px;
+      right: 130px;
+    }
+
+    &:hover {
+      color: @main-text-color;
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }

@@ -19,9 +19,9 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    background-image: url("../img/promo-bg-tablet@1x.png");
     top: -110px;
     min-height: 727px;
+    background-image: url("../img/promo-bg-tablet@1x.png");
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/promo-bg-tablet@2x.png");
@@ -29,6 +29,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-height: 853px;
     background-image: url("../img/promo-bg-desktop@1x.png");
 
     @media (min-resolution: 1.5dppx) {
@@ -39,6 +40,7 @@
 
 
 .promo__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -67,7 +69,6 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 202px;
-    // width: 241px;
     padding-left: 30px;
     padding-right: 30px;
     font-size: 40px;
@@ -76,6 +77,8 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 209px;
+    padding-bottom: 36px;
     font-size: 50px;
     line-height: 68px;
   }
@@ -89,17 +92,20 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     display: block;
-    bottom: 10px;
-    right: 0;
     padding: 0;
+    left: -20px;
+    bottom: -49px;
     width: 660px;
     height: 545px;
     z-index: 1;
     background-position: center;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
+    left: 17px;
+    bottom: -60px;
     width: 1050px;
+    height: 645px;
   }
 }
 
@@ -141,6 +147,11 @@
   @media (min-width: @tablet-width) {
     padding: 16px 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    padding: 16px 28px;
+  }
 }
 
 // .promo__list {
@@ -157,5 +168,9 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     padding: 13px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
   }
 }

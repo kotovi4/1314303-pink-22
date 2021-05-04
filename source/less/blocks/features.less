@@ -13,6 +13,11 @@
     margin-top: -65px;
     padding-bottom: 29px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -48px;
+    padding-bottom: 51px;
+  }
 }
 
 .features__slogan-text {
@@ -30,6 +35,17 @@
     font-size: 40px;
     line-height: 55px;
     width: 588px;
+
+    &--position {
+      width: 500px;
+      padding-top: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    font-size: 50px;
+    line-height: 68px;
 
     &--position {
       width: 500px;
@@ -63,12 +79,14 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    text-align: center;
-    padding-left: 164px;
-    padding-right: 164px;
-    padding-top: 75px;
+    flex-wrap: wrap;
+    padding-top: 5px;
     padding-bottom: 42px;
-    max-width: 940px;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin: 0;
+    margin-left: 32px;
+    text-align: center;
   }
 }
 
@@ -83,7 +101,53 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 324px;
+    padding-top: 329px;
+    margin: 0;
+    margin-right: 84px;
+    width: 236px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      background-image: url("../img/features-phone-mood@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/features-phone-world@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/features-phone-friends@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .features__item {
+      &:nth-child(1) {
+        background-image: url("../img/features-phone-mood@2x.png");
+        background-size: 292px auto;
+      }
+
+      &:nth-child(2) {
+        background-image: url("../img/features-phone-world@2x.png");
+        background-repeat: no-repeat;
+        background-size: 292px auto;
+      }
+
+      &:nth-child(3) {
+        background-image: url("../img/features-phone-friends@2x.png");
+        background-repeat: no-repeat;
+        background-size: 292px auto;
+      }
+    }
   }
 }
 
@@ -93,10 +157,23 @@
   font-weight: 700;
   color: @title-text-color;
   margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .features__text {
   margin-top: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .features__preview {

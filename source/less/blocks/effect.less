@@ -12,7 +12,7 @@
 
   @media (min-width: @desktop-width) {
     background-color: @features-bg-color;
-    padding-bottom: 140px;
+    padding-bottom: 111px;
   }
 }
 
@@ -24,6 +24,7 @@
 
 
   @media (min-width: @desktop-width) {
+    padding-top: 28px;
     padding-left: 500px;
     padding-right: 130px;
   }
@@ -40,7 +41,7 @@
     background-size: cover;
 
     @media (min-width: @desktop-width) {
-      top: -40px;
+      top: -37px;
       left: 130px;
       width: 298px;
       height: 345px;
@@ -58,7 +59,12 @@
   color: @title-text-color;
 
   @media (min-width: @desktop-width) {
+    flex-direction: row;
     line-height: 30px;
+
+    &--position {
+      padding-left: 8px;
+    }
   }
 }
 
@@ -68,6 +74,8 @@
   margin-bottom: 10px;
 
   @media (min-width: @desktop-width) {
+    margin-top: 25px;
+    margin-bottom: 31px;
     font-size: 18px;
     line-height: 30px;
   }
