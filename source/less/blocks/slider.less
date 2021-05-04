@@ -45,7 +45,7 @@
   color: @title-text-color;
 
   @media (min-width: @tablet-width) {
-    padding-top: 15px;
+    padding-top: 23px;
     font-size: 20px;
     order: 1;
   }
@@ -88,6 +88,10 @@
 .slider__toggles {
   margin-top: 10px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
@@ -101,6 +105,11 @@
   width: 6px;
   height: 6px;
   color: @toggle-button-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+    margin-right: 9px;
+  }
 }
 
 .slider__button--active {

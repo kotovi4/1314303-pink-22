@@ -2,9 +2,12 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
-    padding-top: 54px;
-    padding-bottom: 85px;
+    padding-top: 14px;
+    padding-bottom: 118px;
+    background-color: @nav-text-color;
+    z-index: 33;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,8 +18,8 @@
 
 .effect__description {
   position: relative;
-  padding-top: 30px;
-  padding-left: 374px;
+  padding-top: 52px;
+  padding-left: 330px;
   padding-right: 20px;
 
 
@@ -30,7 +33,7 @@
     display: block;
     position: absolute;
     top: 40px;
-    left: 70px;
+    left: 20px;
     width: 238px;
     height: 276px;
     background: url("../img/timer-img-tablet.svg") no-repeat center;
@@ -46,6 +49,9 @@
 }
 
 .effect__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -57,6 +63,10 @@
 }
 
 .effect__text {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;

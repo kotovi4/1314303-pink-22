@@ -8,6 +8,9 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,11 +25,16 @@
 
   &:last-child {
     padding-top: 8px;
+
+    @media (min-width: @tablet-width) {
+      padding-bottom: 0;
+      margin-bottom: 23px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 50%;
-    margin: 0 auto 40px;
+    margin: 0 auto 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +48,10 @@
   line-height: 25px;
   margin-top: 5px;
   margin-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 3px;
+  }
 }
 
 .info-list__item a {

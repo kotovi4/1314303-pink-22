@@ -14,8 +14,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 21px;
-    padding-bottom: 31px;
+    padding-top: 0;
+    padding-bottom: 33px;
     align-items: center;
   }
 
@@ -39,6 +39,11 @@
   &:active {
     color: @main-text-color;
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 10px;
   }
 
   @media (min-width: @desktop-width) {

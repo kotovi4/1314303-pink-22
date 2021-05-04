@@ -21,7 +21,7 @@
     flex-direction: column;
     background-image: url("../img/promo-bg-tablet@1x.png");
     top: -110px;
-    min-height: 703px;
+    min-height: 727px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/promo-bg-tablet@2x.png");
@@ -66,7 +66,7 @@
   color: @nav-text-color;
 
   @media (min-width: @tablet-width) {
-    padding-top: 140px;
+    padding-top: 202px;
     // width: 241px;
     padding-left: 30px;
     padding-right: 30px;
@@ -89,13 +89,17 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     display: block;
-    bottom: 7px;
+    bottom: 10px;
     right: 0;
     padding: 0;
-    width: 100%;
+    width: 660px;
     height: 545px;
     z-index: 1;
     background-position: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 1050px;
   }
 }
 
@@ -105,8 +109,7 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    // padding-left: 20px;
-    // width: 300px;
+    padding-top: 0;
     background: none;
   }
 
@@ -136,7 +139,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    padding: 16px 45px;
   }
 }
 
@@ -153,5 +156,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    padding: 13px 0 20px;
   }
 }
