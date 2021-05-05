@@ -14,8 +14,8 @@
 .table__title {
   position: relative;
   box-sizing: border-box;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 9px;
+  padding-bottom: 29px;
   border-right: 2px solid @table-line-color;
   font-size: 18px;
   color: @nav-text-color;
@@ -37,12 +37,12 @@
   &--hit::before {
     position: absolute;
     margin: auto;
-    top: -6px;
+    top: -2px;
     bottom: auto;
-    left: -34px;
+    left: -35px;
     right: auto;
     content: "хит";
-    width: 45px;
+    width: 56px;
     height: 21px;
     font-size: 14px;
     line-height: 67px;
@@ -55,6 +55,18 @@
     border-right: 27px solid transparent;
     transform: rotate(-45deg);
     z-index: 10;
+  }
+
+  @media (min-width: @tablet-width) {
+    // padding-left: 14px;
+    // padding-right: 0;
+    // padding-top: 8px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 22px;
   }
 }
 
@@ -81,15 +93,19 @@
 
 .table__option {
   padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-right: 17px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   line-height: 30px;
   border-right: 2px solid @table-line-color;
   border-bottom: 2px solid @table-line-color;
   background-color: @nav-text-color;
 
   @media (min-width: @tablet-width) {
+    padding-left: 14px;
+    padding-right: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
     line-height: 30px;
     width: 153px;
 
@@ -100,6 +116,9 @@
 
   @media (min-width: @desktop-width) {
     width: 234px;
+    padding-top: 16px;
+    padding-bottom: 13px;
+
 
     &:nth-child(2n) {
       width: 233px;

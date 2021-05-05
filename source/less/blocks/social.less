@@ -8,5 +8,23 @@
 }
 
 .social__item {
-  padding: 20px 15px;
+  padding-top: 34px;
+  padding-right: 7px;
+  padding-left: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 32px;
+  }
+}
+
+.social__icon {
+  color: @social-icon-border-color;
+
+  &:hover {
+    color: @main-text-color;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
