@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PINK | Главная страница</title>
-  <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="page-body">
+<body>
 
-  <header class="page-header page-header--opened">
+  <header class="page-header">
 
-    <div class="page-header__wrapper">
-      <div class="page-header__top">
-        <a class="page-header__title-logo" href="#">
-          <picture>
-            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
-          </picture>
-        </a>
-      </div>
-
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-line">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="page-header__top">
+      <a class="page-header__title-logo" href="#">
+        <picture>
+          <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Логотип Пинк">
+        </picture>
+      </a>
+      <button class="page-header__toggle page-header__toggle--close" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
+
+    <nav class="main-nav main-nav--nojs">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
 
   </header>
 
@@ -47,33 +44,31 @@
     <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней "Пинк"</h1>
 
     <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-        <picture>
-          <img class="promo__preview" src="img/phone-mobile.png" alt="#" width="320" height="286">
-        </picture>
-        <div class="promo__download">
-          <a class="promo__button" href="#">Скачать приложение</a>
+      <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+      <picture>
+        <img class="promo__preview" src="https://via.placeholder.com/320x286" alt="#" width="320" height="286">
+      </picture>
+      <div class="promo__download">
+        <a class="promo__button" href="#">Скачать приложение</a>
 
-          <ul class="promo__list list-icon">
-            <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--apple" href="#" aria-label="apple">
-                <span class="visually-hidden">Apple</span>
-              </a>
-            </li>
-            <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--android" href="#" aria-label="android">
-                <span class="visually-hidden">Android</span>
-              </a>
-            </li>
-            <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--windows" href="#" aria-label="windows">
-                <span class="visually-hidden">Windows</span>
-              </a>
-            </li>
-          </ul>
-          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
+        <ul class="promo__list list-icon">
+          <li class="list-icon__item">
+            <a class="list-icon__link" href="#">
+              <span class="visually-hidden">iOs</span>
+            </a>
+          </li>
+          <li class="list-icon__item">
+            <a class="list-icon__link" href="#">
+              <span class="visually-hidden">Android</span>
+            </a>
+          </li>
+          <li class="list-icon__item">
+            <a class="list-icon__link" href="#">
+              <span class="visually-hidden">Windows</span>
+            </a>
+          </li>
+        </ul>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
 
@@ -81,25 +76,23 @@
       <h2 class="visually-hidden">Особенности приложения</h2>
       <div class="features__slogan">
         <p class="features__slogan-text">Устали от серости мегаполиса?</p>
-        <p class="features__slogan-text features__slogan-text--position">Нам есть, что вам предложить!</p>
+        <p class="features__slogan-text">Нам есть, что вам предложить!</p>
       </div>
 
-      <div class="features__list-wrapper">
-        <ul class="features__list container">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-      </div>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
       <picture>
         <img class="features__preview" src="https://via.placeholder.com/157x320" alt="" width="157" height="320">
       </picture>
@@ -107,164 +100,136 @@
     </section>
 
     <section class="effect">
-      <div class="effect__description container">
+      <!-- <picture>
+        <img class="features__preview" src="https://via.placeholder.com/238x276" alt="" width="238" height="276">
+      </picture> -->
+      <div class="effect__description">
         <h2 class="effect__title">Эффект на 24 часа!</h2>
         <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
     </section>
 
-    <section class="reviews slider">
+    <section class="reviews">
       <h2 class="visually-hidden">Отзывы</h2>
-      <div class="slider__list container">
-        <blockquote class="slider__item slide slide--current">
-          <cite class="slider__name">Николай Петров</cite>
-          <p class="slider__about">25 лет, водитель трамвая</p>
-          <p class="slider__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+      <input class="reviews__input input" type="radio" id="btn-1" name="toggle-1" checked>
+      <input class="reviews__input input" type="radio" id="btn-2" name="toggle-1">
+      <input class="reviews__input input" type="radio" id="btn-3" name="toggle-1">
 
-        <!-- <blockquote class="slider__item slide">
-          <cite class="slider__name">Николай Петров</cite>
-          <p class="slider__about">25 лет, водитель трамвая</p>
-          <p class="slider__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+      <div class="reviews__wrapper slider">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author">
+              <cite class="reviews__name">Николай Петров</cite>
+              <p class="reviews__about">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
 
-        <blockquote class="slider__item slide">
-          <cite class="slider__name">Николай Петров</cite>
-          <p class="slider__about">25 лет, водитель трамвая</p>
-          <p class="slider__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote> -->
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author">
+              <cite class="reviews__name">Николай Петров</cite>
+              <p class="reviews__about">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author">
+              <cite class="reviews__name">Николай Петров</cite>
+              <p class="reviews__about">25 лет, водитель трамвая</p>
+            </div>
+            <p class="reviews__feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+
+        <div class="reviews__toggles slider__toggles">
+          <label class="reviews__label" for="btn-1"></label>
+          <label class="reviews__label" for="btn-2"></label>
+          <label class="reviews__label" for="btn-3"></label>
+        </div>
       </div>
-
-      <div class="reviews__toggles slider__toggles">
-        <button class="reviews__button slider__button slider__button--active" type="button" aria-label="Первый слайд"></button>
-        <button class="reviews__button slider__button" type="button" aria-label="Второй слайд"></button>
-        <button class="reviews__button slider__button" type="button" aria-label="Третий слайд"></button>
-      </div>
-
-      <button class="reviews__arrow reviews__arrow--left" type="button">
-        <!-- <svg>тут будет спрайт</svg> -->
-      </button>
-      <button class="reviews__arrow reviews__arrow--right" type="button">
-        <!-- <svg>тут будет спрайт</svg> -->
-      </button>
     </section>
 
     <section class="price">
-      <h2 class="visually-hidden">Тарифные планы</h2>
+      <input class="price__input input" type="radio" id="btn-4" name="toggle-2">
+      <input class="price__input input" type="radio" id="btn-5" name="toggle-2" checked>
+      <input class="price__input input" type="radio" id="btn-6" name="toggle-2">
 
       <div class="price__wrapper">
         <table class="price__table table">
-          <thead>
-            <tr>
-              <th class="table__title"></th>
-              <th class="table__title">
-                <span class="table__price-type">База</span>
-                <span class="table__price-value">1,99 USD</span>
-              </th>
-              <th class="table__title table__title--hit">
-                <span class="table__price-type">Стандарт</span>
-                <span class="table__price-value">3,99 USD</span>
-              </th>
-              <th class="table__title">
-                <span class="table__price-type">Анлим</span>
-                <span class="table__price-value">9,99 USD</span>
-              </th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td class="table__option">Розовый фильтр</td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Розовый фильтр">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Розовый фильтр">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Розовый фильтр">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__option">Смайлики</td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Смайлики">
-                  <span class="table__feature-value table__feature-value--false">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Смайлики">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Смайлики">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="table__option">Комментарии</td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Комментарии">
-                  <span class="table__feature-value table__feature-value--false">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Комментарии">
-                  <span class="table__feature-value table__feature-value--false">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-              <td class="table__option">
-                <div class="table__feature" data-feature-name="Комментарии">
-                  <span class="table__feature-value table__feature-value--true">
-                    <span class="visually-hidden">Да</span>
-                  </span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
+          <tr>
+            <th class="table__invisible-cell"></th>
+            <th class="table__title">База<br>
+              <span class="table__price">1,99 USD</span>
+            </th>
+            <th class="table__title">Стандарт<br>
+              <span class="table__price">3,99 USD</span>
+            </th>
+            <th class="table__title">Анлим<br>
+              <span class="table__price">9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td class="table__option">Розовый фильтр</td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__option">Смайлики</td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>нет</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__option">Комментарии</td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>нет</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>нет</p>
+            </td>
+            <td class="table__option">
+              <!-- <svg>тут будет спрайт вместо p</svg> -->
+              <p>есть</p>
+            </td>
+          </tr>
         </table>
       </div>
 
       <div class="price__toggles">
-        <input class="price__input price__input--one" type="radio" id="btn-4" name="toggle-2">
-        <input class="price__input price__input--two" type="radio" id="btn-5" name="toggle-2" checked>
-        <input class="price__input price__input--three" type="radio" id="btn-6" name="toggle-2">
         <label class="price__label" for="btn-4"></label>
-        <label class="price__label price__label--active" for="btn-5"></label>
+        <label class="price__label" for="btn-5"></label>
         <label class="price__label" for="btn-6"></label>
       </div>
     </section>
 
-    <section class="contacts-list">
+    <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p class="contacts-list__title">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
 
-      <ul class="contacts-list__info info-list">
+      <ul class="contacts__info info-list">
         <li class="info-list__item">
           <h3 class="info-list__text">Звоните:</h3>
           <a class="info-list__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
@@ -278,14 +243,13 @@
           <a class="info-list__address" href="https://yandex.ru/maps/-/CVTgZEpc">ул. Большая<br>Конюшенная, 19/8</a>
         </li>
       </ul>
-    </section>
-
-    <section class="map">
-      <img class="map__img" src="https://via.placeholder.com/320x200" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <div class="contacts__map">
+        <img src="https://via.placeholder.com/320x200" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </div>
     </section>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
         <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Логотип HTMLacademy">
@@ -295,22 +259,19 @@
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Вконтакте</span>
-            <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="">
-            <!-- <svg class="social__icon social__icon-vk" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon--vk" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Instagram</span>
-            <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="">
-            <!-- <svg class="social__icon social__icon-inst" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon--inst" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
         <li class="social__item">
           <a class="social__button" href="#">
             <span class="visually-hidden">Facebook</span>
-            <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="">
-            <!-- <svg class="social__icon social__icon-fb" width="48" height="48">тут будет спрайт</svg> -->
+            <!-- <svg class="social__icon social__icon--fb" width="48" height="48">тут будет спрайт</svg> -->
           </a>
         </li>
       </ul>
@@ -322,6 +283,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+
 </body>
 </html>
+
