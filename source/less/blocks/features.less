@@ -114,35 +114,31 @@
       background-image: url("../img/features-phone-mood@1x.png");
       background-position: center 0;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-phone-mood@2x.png");
+        background-size: 292px auto;
+      }
     }
 
     &:nth-child(2) {
       background-image: url("../img/features-phone-world@1x.png");
       background-position: center 0;
       background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-phone-world@2x.png");
+        background-repeat: no-repeat;
+        background-size: 292px auto;
+      }
     }
 
     &:nth-child(3) {
       background-image: url("../img/features-phone-friends@1x.png");
       background-position: center 0;
       background-repeat: no-repeat;
-    }
-  }
 
-  @media (min-resolution: 1.5dppx) {
-    .features__item {
-      &:nth-child(1) {
-        background-image: url("../img/features-phone-mood@2x.png");
-        background-size: 292px auto;
-      }
-
-      &:nth-child(2) {
-        background-image: url("../img/features-phone-world@2x.png");
-        background-repeat: no-repeat;
-        background-size: 292px auto;
-      }
-
-      &:nth-child(3) {
+      @media (min-resolution: 1.5dppx) {
         background-image: url("../img/features-phone-friends@2x.png");
         background-repeat: no-repeat;
         background-size: 292px auto;
