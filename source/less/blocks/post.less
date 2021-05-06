@@ -69,11 +69,27 @@
 .post__image {
   width: 100%;
 
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+
   &--panorama {
     position: relative;
     left: 0;
     top: 0;
     object-fit: cover;
+
+    @media (min-width: @tablet-width) {
+      height: 509px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 506px;
+    }
   }
 }
 
