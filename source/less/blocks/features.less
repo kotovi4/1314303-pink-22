@@ -57,8 +57,12 @@
 .features__list-wrapper {
   position: relative;
   background: @features-bg-color url("../img/bg-triangle-white.svg") no-repeat top center;
-  background-size: 100% auto;
+  background-size: 100% 6%;
   z-index: 20;
+
+  @media (min-width: @tablet-width) {
+    background-size: 100% 11%;
+  }
 }
 
 .features__list {
@@ -81,7 +85,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 5px;
-    padding-bottom: 42px;
+    padding-bottom: 72px;
     padding-left: 162px;
     padding-right: 98px;
     margin: 0 auto;
@@ -103,8 +107,8 @@
   @media (min-width: @desktop-width) {
     padding-top: 329px;
     margin: 0;
-    margin-right: 84px;
-    width: 236px;
+    margin-right: 81px;
+    width: 238px;
 
     &:nth-last-child(1) {
       margin-right: 0;
@@ -112,7 +116,7 @@
 
     &:nth-child(1) {
       background-image: url("../img/features-phone-mood@1x.png");
-      background-position: center 0;
+      background-position: -28px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: 1.5dppx) {
@@ -123,7 +127,7 @@
 
     &:nth-child(2) {
       background-image: url("../img/features-phone-world@1x.png");
-      background-position: center 0;
+      background-position: -24px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: 1.5dppx) {
@@ -135,7 +139,7 @@
 
     &:nth-child(3) {
       background-image: url("../img/features-phone-friends@1x.png");
-      background-position: center 0;
+      background-position: -20px 0;
       background-repeat: no-repeat;
 
       @media (min-resolution: 1.5dppx) {
@@ -169,6 +173,18 @@
     margin-top: 22px;
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.features__text-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
