@@ -7,11 +7,21 @@
   @media (min-width: @tablet-width) {
     justify-content: flex-end;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 22px;
+  }
 }
 
 .developer__name {
   padding-right: 15px;
   color: @main-text-color;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 13px;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .developer__icon {

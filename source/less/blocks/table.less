@@ -55,13 +55,27 @@
     border-right: 27px solid transparent;
     transform: rotate(-45deg);
     z-index: 10;
+
+    @media (min-width: @tablet-width) {
+      top: -8px;
+      left: -31px;
+      width: 40px;
+      border-bottom: 24px solid @accent-color;
+      border-left: 24px solid transparent;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -4px;
+      left: -34px;
+      width: 63px;
+    }
   }
 
   @media (min-width: @tablet-width) {
     // padding-left: 14px;
     // padding-right: 0;
-    // padding-top: 8px;
-    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: @desktop-width) {
@@ -79,6 +93,10 @@
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .table__price-value {
@@ -87,6 +105,10 @@
   font-weight: 300;
 
   @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
     font-size: 24px;
   }
 }
@@ -107,21 +129,22 @@
     padding-top: 8px;
     padding-bottom: 7px;
     line-height: 30px;
-    width: 153px;
+    width: 139px;
 
     &:nth-child(2n) {
-      width: 152px;
+      width: 138px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 234px;
-    padding-top: 16px;
-    padding-bottom: 13px;
-
+    width: 214px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    font-size: 18px;
 
     &:nth-child(2n) {
-      width: 233px;
+      width: 215px;
     }
   }
 
@@ -142,7 +165,12 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-right: 13px;
     justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 19px;
   }
 
   &::before {
