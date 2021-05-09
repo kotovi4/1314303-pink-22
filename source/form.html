@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PINK | Конкурс</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon-32x32.svg" type="image/svg+xml">
+
 </head>
 
 <body class="page-body">
@@ -169,12 +172,12 @@
         <legend class="visually-hidden">Данные участника</legend>
         <p class="personal-info__item">
           <label class="personal-info__label" for="second-name">Фамилия:</label>
-          <input class="personal-info__input input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
+          <input class="personal-info__input input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
         </p>
 
         <p class="personal-info__item">
           <label class="personal-info__label" for="first-name">Имя:</label>
-          <input class="personal-info__input input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
+          <input class="personal-info__input input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
         </p>
 
         <p class="personal-info__item">
@@ -245,7 +248,7 @@
         </p>
         <p class="contacts__item">
           <label class="contacts__label legend" for="email">Адрес почты</label>
-          <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
+          <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту *" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
           <!-- <svg class="contacts__icon contacts__icon--email" width="17" height="13">
             <use xlink:href="#icon-mail"></use>
           </svg> -->
@@ -283,7 +286,7 @@
 
       <div class="contest-form__container">
         <button class="contest-form__button button" type="submit">Отправить форму</button>
-        <p class="contest-form__legend">* — Обязательные поля</p>
+        <p class="contest-form__legend"><span class="contest-form__legend-star">*</span> — Обязательные <span class="contest-form__legend-desktop">для заполнения</span> поля</p>
       </div>
 
     </form>
