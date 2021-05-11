@@ -1,6 +1,6 @@
 .contacts {
   border: none;
-  padding: 20px 5px 18px;
+  padding: 20px 18px 5px;
 
   @media (min-width: @tablet-width) {
     margin: 58px 20px 0;
@@ -29,7 +29,7 @@
     display: inline;
     padding: 0 31px;
     text-align: center;
-    top: 0;
+    top: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,8 +53,8 @@
     margin-left: 58px;
     margin-bottom: 8px;
 
-    &:last-child {
-      margin-right: 62px;
+    &:nth-child(2n + 1) {
+      margin-right: 58px;
     }
   }
 }
