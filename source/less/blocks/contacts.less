@@ -1,7 +1,12 @@
 .contacts {
   border: none;
+  padding: 20px 18px 5px;
 
   @media (min-width: @tablet-width) {
+    margin: 58px 20px 0;
+    padding: 22px 58px 0 58px;
+    border: 2px solid @table-line-color;
+    border-radius: 1px;
     order: 2;
   }
 
@@ -9,7 +14,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 56px;
+    width: 1165px;
   }
 }
 
@@ -17,33 +25,59 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: inline;
+    padding: 0 31px;
     text-align: center;
+    top: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 2px;
   }
 }
 
 .contacts__item {
+  margin-bottom: 19px;
+
   @media (min-width: @tablet-width) {
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 376px;
+    width: 375px;
+    margin-top: 34px;
+    margin-left: 58px;
+    margin-bottom: 8px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 58px;
+    }
   }
 }
 
 .contacts__label {
+  display: block;
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 11px;
+
   @media (min-width: @tablet-width) {
     display: block;
-    order: 2;
+    padding-left: 19px;
+    padding-top: 16px;
     margin: 0;
     text-align: left;
+    order: 2;
   }
 }
 
 .contacts__input {
+  padding-left: 21px;
+
   @media (min-width: @tablet-width) {
     order: 1;
   }

@@ -1,44 +1,77 @@
 .application {
-  padding-left: 20px;
+  margin: 0;
+  padding-left: 21px;
+  padding-bottom: 0;
   border: none;
   background-color: @features-bg-color;
 
   @media (min-width: @tablet-width) {
     position: relative;
-    order: 1;
+    margin-top: 57px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 59px;
     background-color: @nav-text-color;
+    border: 2px solid @table-line-color;
+    border-radius: 1px;
+    order: 1;
   }
 
   @media (min-width: @desktop-width) {
     width: 46%;
-    margin: 0 0 54px;
-    padding: 41px 7.9% 20px;
+    margin: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .application__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding-top: 76px;
-  width: 280px;
+  margin: 0;
+  padding-top: 91px;
+  width: 288px;
 
   @media (min-width: @tablet-width) {
-    width: 616px;
+    width: 545px;
+    padding-top: 52px;
+    padding-bottom: 13px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 20px;
+    width: 46%;
+    padding-top: 52px;
+    margin-left: 74px;
   }
 }
 
 .application__legend {
   position: relative;
-  top: 35px;
+  top: 57px;
+  right: 5px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    padding: 0 20px;
+    white-space: nowrap;
+    background-color: @nav-text-color;
+    transform: translate(-50%, 0);
+  }
 }
 
 .application__label {
   margin-bottom: 45px;
   padding-left: 69px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
 }

@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PINK | Конкурс</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon-32x32.svg" type="image/svg+xml">
+
 </head>
 
 <body class="page-body">
@@ -169,12 +172,12 @@
         <legend class="visually-hidden">Данные участника</legend>
         <p class="personal-info__item">
           <label class="personal-info__label" for="second-name">Фамилия:</label>
-          <input class="personal-info__input input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
+          <input class="personal-info__input input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте фамилию" title="Только русские буквы" required>
         </p>
 
         <p class="personal-info__item">
           <label class="personal-info__label" for="first-name">Имя:</label>
-          <input class="personal-info__input input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя*" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
+          <input class="personal-info__input input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" pattern="[А-Яа-яЁё \s]+$" data-error="Ошибка, перепроверьте имя" title="Только русские буквы" required>
         </p>
 
         <p class="personal-info__item">
@@ -188,46 +191,39 @@
         <ul class="progress__list">
 
           <li class="progress__item">
-            <label class="progress__label checkbox" for="selfie-shark">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="selfie-shark" name="selfie-shark" value="selfie-shark" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Сделал селфи с акулой</span>
+            <label class="progress__label" for="selfie-shark">
+              <input class="progress__input visually-hidden" type="checkbox" id="selfie-shark" name="selfie-shark" value="selfie-shark" checked>
+              <span class="progress__text">Сделал селфи с акулой</span>
             </label>
           </li>
 
           <li class="progress__item">
-            <label class="progress__label checkbox" for="burned">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="burned" name="burned" value="burned" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Обгорел на пляже</span>
+            <label class="progress__label" for="burned">
+              <input class="progress__input visually-hidden" type="checkbox" id="burned" name="burned" value="burned" checked>
+              <span class="progress__text">Обгорел на пляже</span>
             </label>
           </li>
           <li class="progress__item">
-            <label class="progress__label checkbox" for="chuck-norris">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris" value="chuck-norris">
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Видел Чака Норриса</span>
+            <label class="progress__label" for="chuck-norris">
+              <input class="progress__input visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris" value="chuck-norris">
+              <span class="progress__text">Видел Чака Норриса</span>
             </label>
           </li>
           <li class="progress__item">
-            <label class="progress__label checkbox" for="souvenirs">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Накупил сувениров</span>
+            <label class="progress__label" for="souvenirs">
+              <input class="progress__input visually-hidden" type="checkbox" id="souvenirs" name="souvenirs" value="souvenirs">
+              <span class="progress__text">Накупил сувениров</span>
             </label>
           </li>
           <li class="progress__item">
-            <label class="progress__label checkbox" for="held-tower">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="held-tower" name="held-tower" value="held-tower" checked>
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Удержал башню</span>
+            <label class="progress__label" for="held-tower">
+              <input class="progress__input visually-hidden" type="checkbox" id="held-tower" name="held-tower" value="held-tower" checked>              <span class="progress__text">Удержал башню</span>
             </label>
           </li>
           <li class="progress__item">
-            <label class="progress__label checkbox" for="trashed-hotel">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="trashed-hotel" name="trashed-hotel" value="trashed-hotel">
-              <span class="checkbox__icon"></span>
-              <span class="checkbox__text">Разгромил отель</span>
+            <label class="progress__label" for="trashed-hotel">
+              <input class="progress__input visually-hidden" type="checkbox" id="trashed-hotel" name="trashed-hotel" value="trashed-hotel">
+              <span class="progress__text">Разгромил отель</span>
             </label>
           </li>
         </ul>
@@ -245,7 +241,7 @@
         </p>
         <p class="contacts__item">
           <label class="contacts__label legend" for="email">Адрес почты</label>
-          <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
+          <input class="contacts__input input" type="email" id="email" name="email" placeholder="Введите почту *" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" data-error="Ошибка, перепроверьте почту" title="your-mail@domain.ru" required>
           <!-- <svg class="contacts__icon contacts__icon--email" width="17" height="13">
             <use xlink:href="#icon-mail"></use>
           </svg> -->
@@ -283,7 +279,7 @@
 
       <div class="contest-form__container">
         <button class="contest-form__button button" type="submit">Отправить форму</button>
-        <p class="contest-form__legend">* — Обязательные поля</p>
+        <p class="contest-form__legend"><span class="contest-form__legend-star">*</span> — Обязательные <span class="contest-form__legend-desktop">для заполнения</span> поля</p>
       </div>
 
     </form>
