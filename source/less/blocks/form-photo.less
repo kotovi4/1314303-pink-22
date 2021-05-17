@@ -1,19 +1,26 @@
 .form-photo {
   position: relative;
-  padding-bottom: 23px;
-  background-color: @features-bg-color;
   margin-bottom: 7px;
+  padding-bottom: 35px;
+  background-color: @features-bg-color;
+
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 37px;
+    justify-content: space-between;
     padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: space-between;
     width: 940px;
     margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -21,17 +28,17 @@
   display: block;
   margin: 0 auto;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 42px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 57px;
     width: 300px;
     height: 400px;
   }
 
   @media (min-width: @desktop-width) {
     padding-left: 80px;
+    padding-bottom: 45px;
   }
 }
 
@@ -39,21 +46,22 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  // padding: 0 20px 32px 20px;
+  justify-content: center;
   margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 13px;
-    padding-right: 0;
-    padding-bottom: 40px;
-    padding-left: 29px;
+    width: 275px;
     margin-bottom: 0;
+    padding-top: 47px;
+    padding-bottom: 43px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 15px;
-    padding-left: 70px;
+    width: 410px;
+    padding-top: 47px;
+    padding-right: 60px;
+    padding-bottom: 45px;
   }
 }
 
@@ -62,11 +70,9 @@
   border-bottom: 1px solid @social-icon-border-color;
 
   @media (min-width: @tablet-width) {
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: -5px;
+    margin-bottom: 63px;
     border-bottom: none;
-    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -81,33 +87,18 @@
   width: 240px;
   margin: 0 auto;
   margin-bottom: 2px;
-  padding-bottom: 73px;
+  padding-bottom: 67px;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin-left: 39px;
-  margin-right: 52px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // width: 100%;
-  // justify-content: center;
-  // padding-bottom: 36px;
 
   @media (min-width: @tablet-width) {
-    // display: grid;
-    // grid-template-columns: 1fr 255px;
-    // width: 100%;
-    width: 268px;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 0;
     padding-bottom: 0;
     justify-content: space-between;
     border-bottom: none;
   }
-
-  // @media (min-width: @desktop-width) {
-  //   display: grid;
-  //   grid-template-columns: 1fr 288px;
-  // }
 }
 
 .form-photo__controls-item {
@@ -115,28 +106,40 @@
 
   @media (min-width: @tablet-width) {
     width: 275px;
-    padding: 16px 18px 25px 0;
+    padding: 20px 18px 22px 0;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #dddfe0;
-    margin-bottom: 10px;
+
+    &:last-child {
+      padding-top: 17px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 3px 18px 16px 0;
+    width: 410px;
+    padding: 13px 18px 15px 0;
+
+    &:last-child {
+      padding-top: 10px;
+    }
   }
 }
 
 .form-photo__filter-toggle {
-  display: flex;
-  flex-direction: row-reverse;
-  // padding-right: 13px;
+  cursor: pointer;
   text-align: center;
   align-items: center;
-  // padding-top: 15px;
 
   @media (min-width: @tablet-width) {
-    justify-content: center;
+    width: 28px;
+    height: 22px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 44px;
     padding: 0;
   }
 }
@@ -144,16 +147,11 @@
 
 .form-photo__input-range {
   position: absolute;
-  margin: auto;
-  top: auto;
-  bottom: 34px;
+  top: 70px;
   left: 0;
   right: 0;
   content: none;
   display: block;
-  // position: relative;
-  // width: 100%;
-  // padding: 25px 0;
 
   @media (max-width: calc(@tablet-width - 1px)) {
     order: 1;
@@ -171,7 +169,6 @@
   &::before {
     content: "";
     position: absolute;
-    left: 1px;
     display: block;
     width: 240px;
     height: 2px;
@@ -180,13 +177,13 @@
 
     @media (min-width: @tablet-width) {
       position: relative;
-      left: 16px;
       width: 202px;
       margin: 0;
     }
 
     @media (min-width: @desktop-width) {
       width: 288px;
+      left: -12px;
     }
   }
 
@@ -203,6 +200,31 @@
     background: @features-bg-color;
     z-index: 10;
     cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      left: 25px;
+
+      .form-photo__controls-item:first-child p& {
+        left: 160px;
+      }
+
+      .form-photo__controls-item:last-child p& {
+        left: 96px;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 24px;
+      top: -6px;
+
+      .form-photo__controls-item:first-child p& {
+        left: 222px;
+      }
+
+      .form-photo__controls-item:last-child p& {
+        left: 125px;
+      }
+    }
   }
 
   .form-photo__filter-toggle--fill ~ &,
@@ -242,12 +264,17 @@
   }
 
   &--contrast {
+    margin-right: 12px;
+    margin-bottom: 4px;
+
     @media (min-width: @tablet-width) {
       width: 16px;
       height: 16px;
+      margin: 0;
     }
 
     @media (min-width: @desktop-width) {
+      margin-top: 6px;
       width: 32px;
       height: 32px;
     }
@@ -255,6 +282,10 @@
 
   &--active {
     color: @accent-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
   }
 }
 
@@ -286,6 +317,23 @@
   display: none;
 }
 
+.form-photo__buttons-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form-photo__button {
   display: block;
   font-size: 18px;
@@ -302,25 +350,33 @@
     margin-right: 10px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+
   &--post {
-    margin-top: 38px;
+    width: 100%;
+    margin-bottom: 12px;
     padding: 15px 90px 16px 90px;
     color: @accent-color;
     border: 3px solid @accent-color;
 
     @media (min-width: @tablet-width) {
-      margin-top: 22px;
       padding: 15px 66px;
-      // margin-left: 0px;
-      // margin-right: 20px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 15px 60px;
+      width: 183px;
+      padding: 15px 42px;
+      margin-bottom: 0;
+      margin-right: 44px;
     }
   }
 
   &--cancel {
+    width: 100%;
+    margin-bottom: 0;
     padding: 15px 103px 16px 103px;
     color: @main-text-color;
     border: 3px solid @main-text-color;
@@ -328,12 +384,11 @@
 
     @media (min-width: @tablet-width) {
       padding: 15px 66px;
-      // margin-left: 0px;
-      // margin-right: 20px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 15px 70px;
+      width: 183px;
+      padding: 15px 55px;
     }
   }
 }
