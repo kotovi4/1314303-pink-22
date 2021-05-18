@@ -172,9 +172,12 @@
       <div class="promo__wrapper">
         <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/promo-phone-desktop@1x.webp, img/promo-phone-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/promo-phone-tablet@1x.webp, img/promo-phone-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo-phone-mobile@2x.webp 2x, img/promo-phone-mobile@1x.webp">
           <source media="(min-width: 1200px)" srcset="img/promo-phone-desktop@1x.png, img/promo-phone-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/promo-phone-tablet@1x.png, img/promo-phone-tablet@2x.png 2x">
-          <img class="promo__preview" src="img/promo-phone-mobile@1x.png" srcset="img/promo-phone-mobile@2x.png 2x" alt="#" width="320" height="286">
+          <img class="promo__preview" src="img/promo-phone-mobile@1x.png" srcset="img/promo-phone-mobile@2x.png 2x" alt="Рука держит мобильный телефон" width="320" height="286">
         </picture>
         <div class="promo__download">
           <a class="promo__button" href="#">Скачать приложение</a>
@@ -225,8 +228,10 @@
         </ul>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/features-phone-tablet@1x.webp, img/features-phone-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/features-phone@1x.webp, img/features-phone@2x.webp 2x">
         <source media="(min-width: 660px)" srcset="img/features-phone-tablet@1x.png, img/features-phone-tablet@2x.png 2x">
-        <img class="features__preview" src="img/features-phone@1x.png" srcset="img/features-phone@2x.png" alt="" width="157" height="320">
+        <img class="features__preview" src="img/features-phone@1x.png" srcset="img/features-phone@2x.png" alt="Мобильный телефон" width="157" height="320">
       </picture>
 
     </section>
@@ -412,6 +417,9 @@
 
     <section class="map">
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-img-desktop@1x.webp, img/map-img-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 660px)" srcset="img/map-img-tablet@1x.webp, img/map-img-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/map-img-mobile@1x.webp, img/map-img-mobile@2x.webp 2x">
         <source media="(min-width: 1200px)" srcset="img/map-img-desktop@1x.png, img/map-img-desktop@2x.png 2x">
         <source media="(min-width: 660px)" srcset="img/map-img-tablet@1x.png, img/map-img-tablet@2x.png 2x">
         <img class="map__img" src="img/map-img-mobile@1x.png" srcset="img/map-img-mobile@2x.png" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
