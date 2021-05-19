@@ -8,7 +8,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 12px;
     padding-left: 20px;
     padding-right: 20px;
@@ -51,6 +51,7 @@
 
   @media (min-width: @tablet-width) {
     width: 275px;
+    margin-left: 47px;
     margin-bottom: 0;
     padding-top: 47px;
     padding-bottom: 43px;
@@ -122,6 +123,7 @@
 
     &:last-child {
       padding-top: 10px;
+      border-bottom: none;
     }
   }
 }
@@ -153,7 +155,7 @@
   content: none;
   display: block;
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: @max-mobile-width) {
     order: 1;
   }
 
@@ -229,7 +231,7 @@
 
   .form-photo__filter-toggle--fill ~ &,
   .form-photo__filter-toggle--contrast ~ & {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @max-mobile-width) {
       display: none;
     }
   }
