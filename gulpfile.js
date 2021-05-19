@@ -14,7 +14,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
-// Stylesnpm
+// Styles
 
 const styles = () => {
   return gulp.src("source/less/style.less")
