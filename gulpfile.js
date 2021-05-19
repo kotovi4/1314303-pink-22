@@ -13,7 +13,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
-// const copyStyles = require("copy");
 
 // Stylesnpm
 
