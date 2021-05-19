@@ -13,9 +13,9 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
-const copyStyles = require("copy");
+// const copyStyles = require("copy");
 
-// Styles
+// Stylesnpm
 
 const styles = () => {
   return gulp.src("source/less/style.less")
