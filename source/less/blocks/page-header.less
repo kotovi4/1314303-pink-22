@@ -40,14 +40,60 @@
   // border-bottom: 1px solid @title-text-color;
 
   @media (min-width: @tablet-width) {
+    align-items: flex-start;
     height: 110px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 0;
     border: none;
   }
 }
 
-// .page-header__title-logo {
+.page-header__logo {
+  padding-top: 5px;
+  color: @nav-text-color;
 
-// }
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover {
+    color: @accent-color;
+  }
+
+  &:active {
+    color: @nav-text-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 27px;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+}

@@ -1,15 +1,20 @@
 .price {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 32px;
+  padding-top: 102px;
+  padding-bottom: 46px;
   background: @features-bg-color url("../img/bg-triangle-white.svg") no-repeat top center;
-  background-size: 100% auto;
+  background-size: 100% 11%;
   z-index: 20;
 
   @media (min-width: @tablet-width) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 120px;
+    padding-top: 98px;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 156px;
+    padding-bottom: 96px;
+    background-size: 100% 22%;
   }
 }
 
@@ -41,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 39px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -73,7 +78,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin: 0 10px;
+  margin: 0 8px;
   vertical-align: top;
   background-color: @toggle-button-color;
   border-radius: 50%;

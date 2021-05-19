@@ -1,17 +1,23 @@
 .features {
   position: relative;
   text-align: center;
-  padding-bottom: 20px;
   background-color: @features-bg-color;
 }
 
 .features__slogan {
-  padding-bottom: 70px;
+  margin-top: -27px;
+  padding-bottom: 31px;
   background-color: @nav-text-color;
 
-  // @media (min-width: @tablet-width) {
-  //   padding-top: 58px;
-  // }
+  @media (min-width: @tablet-width) {
+    margin-top: -65px;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -48px;
+    padding-bottom: 51px;
+  }
 }
 
 .features__slogan-text {
@@ -35,6 +41,17 @@
       padding-top: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    font-size: 50px;
+    line-height: 68px;
+
+    &--position {
+      width: 500px;
+      padding-top: 0;
+    }
+  }
 }
 
 .features__list-wrapper {
@@ -47,35 +64,86 @@
 .features__list {
   margin: 0 auto;
   padding: 0;
-  padding-top: 35px;
-  padding-bottom: 20px;
+  padding-top: 64px;
+  padding-bottom: 10px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
-    // width: 310px;
     text-align: left;
-    padding-left: 308px;
-    padding-right: 20px;
+    padding-left: 310px;
+    padding-right: 8px;
+    padding-top: 57px;
+    padding-bottom: 9px;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    text-align: center;
-    padding-left: 164px;
-    padding-right: 164px;
-    padding-top: 75px;
+    flex-wrap: wrap;
+    padding-top: 5px;
     padding-bottom: 42px;
-    max-width: 940px;
+    padding-left: 162px;
+    padding-right: 98px;
+    margin: 0 auto;
+    width: 940px;
+    text-align: center;
   }
 }
 
 .features__item {
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 10px;
+    margin-bottom: 34px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding-top: 324px;
+    padding-top: 329px;
+    margin: 0;
+    margin-right: 84px;
+    width: 236px;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(1) {
+      background-image: url("../img/features-phone-mood@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-phone-mood@2x.png");
+        background-size: 292px auto;
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/features-phone-world@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-phone-world@2x.png");
+        background-repeat: no-repeat;
+        background-size: 292px auto;
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/features-phone-friends@1x.png");
+      background-position: center 0;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url("../img/features-phone-friends@2x.png");
+        background-repeat: no-repeat;
+        background-size: 292px auto;
+      }
+    }
   }
 }
 
@@ -84,19 +152,37 @@
   line-height: 24px;
   font-weight: 700;
   color: @title-text-color;
+  margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
-// .features__text {
-// }
+.features__text {
+  margin-top: 12px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
 
 .features__preview {
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 390px;
-    left: 85px;
+    top: 199px;
+    left: 20px;
+    width: 268px;
+    height: 547px;
+    z-index: 22;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }

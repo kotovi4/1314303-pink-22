@@ -11,6 +11,7 @@
 .slider__item {
   padding: 0;
   margin: 0;
+  padding-top: 41px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -23,8 +24,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: 72px;
-      left: 443px;
+      top: 122px;
+      left: 431px;
       width: 79px;
       height: 65px;
       background-image: url("../img/quotes-icon.svg");
@@ -44,7 +45,7 @@
   color: @title-text-color;
 
   @media (min-width: @tablet-width) {
-    padding-top: 15px;
+    padding-top: 23px;
     font-size: 20px;
     order: 1;
   }
@@ -80,12 +81,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 165px;
+    width: 688px;
+    margin: 0 auto;
+    padding-top: 193px;
   }
 }
 
 .slider__toggles {
-  margin-top: 33px;
+  margin-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 27px;
+  }
 
   @media (min-width: @desktop-width) {
     display: none;
@@ -94,12 +101,17 @@
 
 .slider__button {
   padding: 0;
-  margin: 0 9px;
+  margin: 0 7px;
   border-radius: 50%;
   border: none;
   width: 6px;
   height: 6px;
   color: @toggle-button-color;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 5px;
+    margin-right: 9px;
+  }
 }
 
 .slider__button--active {

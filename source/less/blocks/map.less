@@ -10,13 +10,26 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 68px;
+    height: 33px;
     background: url("../img/bg-triangle-white-map.svg") no-repeat top center;
     background-size: 100% 100%;
     z-index: 20;
+
+    @media (min-width: @tablet-width) {
+      height: 68px;
+    }
   }
 }
 
 .map__img {
   width: 100%;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 502px;
+  }
 }
