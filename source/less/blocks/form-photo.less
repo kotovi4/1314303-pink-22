@@ -155,7 +155,7 @@
   content: none;
   display: block;
 
-  @media (max-width: calc(@tablet-width - 1px)) {
+  @media (max-width: @max-mobile-width) {
     order: 1;
   }
 
@@ -231,7 +231,7 @@
 
   .form-photo__filter-toggle--fill ~ &,
   .form-photo__filter-toggle--contrast ~ & {
-    @media (max-width: calc(@tablet-width - 1px)) {
+    @media (max-width: @max-mobile-width) {
       display: none;
     }
   }

@@ -13,7 +13,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
-
+const copyStyles = require("copy");
 
 // Styles
 
@@ -34,12 +34,24 @@ const styles = () => {
 
 exports.styles = styles;
 
+const copyStyles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest("build/css"))
+}
+
+exports.copyStyles = copyStyles;
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -148,7 +160,7 @@ exports.copy = copy;
 
 // Clean
 
-const clean = (del) => {
+const clean = () => {
   return del("build");
 };
 
@@ -165,6 +177,7 @@ const reload = (done) => {
 const build = gulp.series(
   clean,
   copy,
+  copyStyles,
   optimizeImages,
   gulp.parallel(
     styles,
@@ -182,6 +195,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
+  copyStyles,
   copyImages,
   gulp.parallel(
     styles,
