@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PINK | Главная страница</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/favicon.ico">
   <link rel="icon" href="img/favicon-32x32.svg" type="image/svg+xml">
 </head>
 <body class="page-body">
@@ -128,23 +128,23 @@
     <div class="page-header__wrapper">
       <div class="page-header__top">
         <a class="page-header__logo">
-          <svg class="page-header__logo--mobile" width="75" height="22">
+          <svg class="page-header__logo-mobile" width="75" height="22">
             <use xlink:href="#logo-header-mobile"></use>
           </svg>
 
-          <svg class="page-header__logo--tablet" width="147" height="40">
+          <svg class="page-header__logo-tablet" width="147" height="40">
             <use xlink:href="#logo-header-tablet"></use>
           </svg>
 
-          <svg class="page-header__logo--desktop" width="147" height="40">
+          <svg class="page-header__logo-desktop" width="147" height="40">
             <use xlink:href="#logo-header-desktop"></use>
           </svg>
         </a>
       </div>
 
-      <nav class="main-nav main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="main-nav__toggle-line">Открыть меню</span>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button" aria-label="Открыть меню">
+          <span class="main-nav__toggle-line"></span>
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -180,21 +180,21 @@
           <img class="promo__preview" src="img/promo-phone-mobile@1x.png" srcset="img/promo-phone-mobile@2x.png 2x" alt="Рука держит мобильный телефон" width="320" height="286">
         </picture>
         <div class="promo__download">
-          <a class="promo__button" href="#">Скачать приложение</a>
+          <a class="promo__button promo__button--download" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
 
           <ul class="promo__list list-icon">
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--apple" href="#" aria-label="apple">
+              <a class="list-icon__link list-icon__link--apple" href="https://www.apple.com/ru/app-store/" aria-label="apple">
                 <span class="visually-hidden">Apple</span>
               </a>
             </li>
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--android" href="#" aria-label="android">
+              <a class="list-icon__link list-icon__link--android" href="https://play.google.com/store?hl=ru&gl=US" aria-label="android">
                 <span class="visually-hidden">Android</span>
               </a>
             </li>
             <li class="list-icon__item">
-              <a class="list-icon__link list-icon__link--windows" href="#" aria-label="windows">
+              <a class="list-icon__link list-icon__link--windows" href="https://www.microsoft.com/ru-RU/store/apps" aria-label="windows">
                 <span class="visually-hidden">Windows</span>
               </a>
             </li>
@@ -239,7 +239,7 @@
     <section class="effect">
       <h2 class="visually-hidden">Эффект от приложения</h2>
       <div class="effect__description container">
-        <p class="effect__title">Эффект <span class="effect__title--position">на 24 часа!</span></з>
+        <p class="effect__title">Эффект <span class="effect__title-position">на 24 часа!</span></p>
         <p class="effect__text">Британские ученые провели исследования и доказали, <br class="effect__text-br-1"> что положительный эффект <br class="effect__text-br-2"> от использования приложения длится целые сутки!</p>
         <a class="effect__link" href="#">Узнать больше об исследовании</a>
       </div>
@@ -416,24 +416,18 @@
     </section>
 
     <section class="map">
-      <picture>
-        <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-img-desktop@1x.webp, img/map-img-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 660px)" srcset="img/map-img-tablet@1x.webp, img/map-img-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/map-img-mobile@1x.webp, img/map-img-mobile@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/map-img-desktop@1x.png, img/map-img-desktop@2x.png 2x">
-        <source media="(min-width: 660px)" srcset="img/map-img-tablet@1x.png, img/map-img-tablet@2x.png 2x">
-        <img class="map__img" src="img/map-img-mobile@1x.png" srcset="img/map-img-mobile@2x.png" width="320" height="200" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-      </picture>
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e084cc28e4a6d2f74391a1457016327edc29be5c13e48fa83f3840752216058&amp;source=constructor" width="100%" height="100%" style="border:0;" allowfullscreen="true"></iframe>
     </section>
   </main>
 
   <footer class="page-footer container">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
-        <svg class="page-footer__logo--mobile" width="145" height="40">
+        <svg class="page-footer__logo-mobile" width="145" height="40">
           <use xlink:href="#logo-footer"></use>
         </svg>
-        <svg class="page-footer__logo--desktop" width="145" height="40">
+        <svg class="page-footer__logo-desktop" width="145" height="40">
           <use xlink:href="#logo-footer-desktop"></use>
         </svg>
       </a>

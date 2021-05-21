@@ -3,8 +3,9 @@
   padding: 20px 18px 5px;
 
   @media (min-width: @tablet-width) {
-    margin: 58px 20px 0;
-    padding: 22px 58px 0 58px;
+    position: relative;
+    margin: 66px 20px 0;
+    padding: 30px 58px 0;
     border: 2px solid @table-line-color;
     border-radius: 1px;
     order: 2;
@@ -15,8 +16,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
-    margin-top: 56px;
+    padding-top: 8px;
+    margin: 64px 0 0;
     width: 1165px;
   }
 }
@@ -25,11 +26,14 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    position: relative;
+    position: absolute;
     display: inline;
+    left: 50%;
+    top: -9px;
     padding: 0 31px;
     text-align: center;
-    top: 1px;
+    transform: translate(-50%,0);
+    background-color: @nav-text-color;
   }
 
   @media (min-width: @desktop-width) {

@@ -203,6 +203,10 @@
     z-index: 10;
     cursor: pointer;
 
+    .form-photo__controls-item:active p& {
+      background: @accent-color;
+    }
+
     @media (min-width: @tablet-width) {
       left: 25px;
 
@@ -240,6 +244,14 @@
 .form-photo__filter-icon {
   cursor: pointer;
 
+  &:hover {
+    color: @filter-icon-hover-color;
+  }
+
+  &--active {
+    color: @accent-color;
+  }
+
   &--crop {
     @media (min-width: @tablet-width) {
       width: 22px;
@@ -249,14 +261,18 @@
     @media (min-width: @desktop-width) {
       width: 44px;
       height: 44px;
+      color: @accent-color;
     }
   }
 
   &--fill {
+    color: @toggle-button-color;
+
     @media (min-width: @tablet-width) {
       padding: 0;
       width: 24px;
       height: 22px;
+      color: @accent-color;
     }
 
     @media (min-width: @desktop-width) {
@@ -268,11 +284,13 @@
   &--contrast {
     margin-right: 12px;
     margin-bottom: 4px;
+    color: @toggle-button-color;
 
     @media (min-width: @tablet-width) {
       width: 16px;
       height: 16px;
       margin: 0;
+      color: @accent-color;
     }
 
     @media (min-width: @desktop-width) {
@@ -282,9 +300,6 @@
     }
   }
 
-  &--active {
-    color: @accent-color;
-  }
 
   @media (min-width: @desktop-width) {
     width: 48px;
@@ -363,6 +378,15 @@
     color: @accent-color;
     border: 3px solid @accent-color;
 
+    &:hover {
+      color: @nav-text-color;
+      background: @accent-color;
+    }
+
+    &:active {
+      color: @button-color-active;
+    }
+
     @media (min-width: @tablet-width) {
       padding: 15px 66px;
       margin-bottom: 25px;
@@ -383,6 +407,15 @@
     color: @main-text-color;
     border: 3px solid @main-text-color;
     opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background: @main-text-color;
+      color: @button-color-active;
+    }
 
     @media (min-width: @tablet-width) {
       padding: 15px 66px;
