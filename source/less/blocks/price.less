@@ -82,9 +82,18 @@
   vertical-align: top;
   background-color: @toggle-button-color;
   border-radius: 50%;
+
+  &:hover {
+    background-color: @slider-bullet-hover-color;
+  }
+
+  &:active {
+    background-color: @social-icon-border-color;
+  }
 }
 
 .price__label--active {
   background-color: @nav-text-color;
   border: 3px solid @main-text-color;
+  cursor: pointer;
 }

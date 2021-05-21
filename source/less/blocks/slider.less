@@ -107,7 +107,16 @@
   border: none;
   width: 6px;
   height: 6px;
-  color: @toggle-button-color;
+  background-color: @toggle-button-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @slider-bullet-hover-color;
+  }
+
+  &:active {
+    background-color: @social-icon-border-color;
+  }
 
   @media (min-width: @tablet-width) {
     margin-left: 5px;
@@ -120,4 +129,5 @@
   width: 12px;
   height: 12px;
   border: 3px solid @main-text-color;
+  background-color: @nav-text-color;
 }
