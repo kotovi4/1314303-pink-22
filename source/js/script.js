@@ -8,18 +8,10 @@ mainNavList.classList.remove('main-nav--opened');
 mainNavList.classList.add('main-nav--closed');
 mainNavToggle.classList.remove('main-nav__toggle--hide');
 
-mainNavToggle.addEventListener('click', function() {
-  if (mainNavList.classList.contains('main-nav--closed')) {
-    mainNavList.classList.remove('main-nav--closed');
-    mainNavList.classList.add('main-nav--opened');
-    pageHeader.classList.add('page-header--opened');
-    pageHeader.classList.remove('page-header--closed');
-    mainNavToggle.classList.add('main-nav__toggle--closed');
-  } else {
-    pageHeader.classList.remove('page-header--opened');
-    pageHeader.classList.add('page-header--closed');
-    mainNavList.classList.remove('main-nav--opened');
-    mainNavList.classList.add('main-nav--closed');
-    mainNavToggle.classList.remove('main-nav__toggle--closed');
-  }
-});
+mainNavToggle.onclick = function() {
+  pageHeader.classList.toggle('page-header--opened');
+  pageHeader.classList.toggle('page-header--closed');
+  mainNavList.classList.toggle('main-nav--opened');
+  mainNavList.classList.toggle('main-nav--closed');
+  mainNavToggle.classList.toggle('main-nav__toggle--closed');
+};
