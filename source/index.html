@@ -8,6 +8,7 @@
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicons/favicon.ico">
   <link rel="icon" href="img/favicon-32x32.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
 </head>
 <body class="page-body">
   <svg style="display: none;">
@@ -403,9 +404,10 @@
       </ul>
     </section>
 
-    <section class="map">
+    <section class="">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e084cc28e4a6d2f74391a1457016327edc29be5c13e48fa83f3840752216058&amp;source=constructor" width="320" height="200" style="border:0;" allowfullscreen=""></iframe>
+      <div id="map" style="width: 100%; height: 480px;"></div>
+      <!-- <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3e084cc28e4a6d2f74391a1457016327edc29be5c13e48fa83f3840752216058&amp;source=constructor" width="320" height="200" style="border:0;" allowfullscreen=""></iframe> -->
     </section>
   </main>
 
@@ -454,6 +456,7 @@
       </a>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 </html>
