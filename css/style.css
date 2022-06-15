@@ -862,9 +862,11 @@ template {
 }
 input::-moz-placeholder {
   color: #283645;
+  opacity: 0.7;
 }
 input::placeholder {
   color: #283645;
+  opacity: 0.7;
 }
 .radio {
   position: relative;
@@ -2847,9 +2849,11 @@ input::placeholder {
 }
 .emotions__textarea::-moz-placeholder {
   color: #283645;
+  opacity: 0.7;
 }
 .emotions__textarea::placeholder {
   color: #283645;
+  opacity: 0.7;
 }
 .popup {
   position: fixed;
